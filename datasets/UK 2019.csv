@@ -1,0 +1,496 @@
+﻿Description,Code,Median,Mean
+All employees,,24937,30673
+"Managers, directors and senior officials",1,40832,56430
+  Corporate managers and directors,11,44406,60638
+    Chief executives and senior officials,111,85588,133665
+      Chief executives and senior officials,1115,91646,142199
+      Elected officers and representatives,1116,x,x
+    Production managers and directors,112,44027,55628
+      Production managers and directors in manufacturing,1121,43480,55806
+      Production managers and directors in construction,1122,45859,54599
+      Production managers and directors in mining and energy,1123,44900,55491
+    Functional managers and directors,113,57780,73308
+      Financial managers and directors,1131,60502,79102
+      Marketing and sales directors,1132,75332,88257
+      Purchasing managers and directors,1133,48344,56149
+      Advertising and public relations directors,1134,57986,65310
+      Human resource managers and directors,1135,45377,53113
+      Information technology and telecommunications directors,1136,66862,76442
+      Functional managers and directors n.e.c.,1139,48427,59702
+    Financial institution managers and directors,115,46763,68475
+      Financial institution managers and directors,1150,46763,68475
+    Managers and directors in transport and logistics,116,32788,36799
+      Managers and directors in transport and distribution,1161,38983,44524
+      Managers and directors in storage and warehousing,1162,29446,32366
+    Senior officers in protective services,117,51993,52753
+      Officers in armed forces,1171,,
+      Senior police officers,1172,58772,59092
+"      Senior officers in fire, ambulance, prison and related services",1173,44159,46468
+    Health and social services managers and directors,118,44467,47220
+      Health services and public health managers and directors,1181,48034,49932
+      Social services managers and directors,1184,36400,40254
+    Managers and directors in retail and wholesale,119,27129,33211
+      Managers and directors in retail and wholesale,1190,27129,33211
+  Other managers and proprietors,12,29777,34095
+    Managers and proprietors in agriculture related services,121,30257,30492
+      Managers and proprietors in agriculture and horticulture,1211,30855,30985
+"      Managers and proprietors in forestry, fishing and related services",1213,29202,28545
+    Managers and proprietors in hospitality and leisure services,122,25699,30082
+      Hotel and accommodation managers and proprietors,1221,30346,34148
+      Restaurant and catering establishment managers and proprietors,1223,23821,26551
+      Publicans and managers of licensed premises,1224,x,27528
+      Leisure and sports managers,1225,29948,33057
+      Travel agency managers and proprietors,1226,x,33690
+    Managers and proprietors in health and care services,124,31070,32510
+      Health care practice managers,1241,28942,31819
+"      Residential, day and domiciliary  care managers and proprietors",1242,31711,32731
+    Managers and proprietors in other services,125,30987,36946
+"      Property, housing and estate managers",1251,32073,37445
+      Garage managers and proprietors,1252,x,46776
+      Hairdressing and beauty salon managers and proprietors,1253,22210,22676
+      Shopkeepers and proprietors – wholesale and retail,1254,25203,x
+      Waste disposal and environmental services managers,1255,x,49974
+      Managers and proprietors in other services n.e.c.,1259,29446,35654
+Professional occupations,2,36175,39580
+"  Science, research, engineering and technology professionals",21,41896,44905
+    Natural and social science professionals,211,36402,38319
+      Chemical scientists,2111,31253,35773
+      Biological scientists and biochemists,2112,35373,38010
+      Physical scientists,2113,42983,45464
+      Social and humanities scientists,2114,32019,31607
+      Natural and social science professionals n.e.c.,2119,37384,38522
+    Engineering professionals,212,41790,43385
+      Civil engineers,2121,40266,42544
+      Mechanical engineers,2122,39613,46593
+      Electrical engineers,2123,49168,50468
+      Electronics engineers,2124,44322,46344
+      Design and development engineers,2126,41002,41944
+      Production and process engineers,2127,40453,41157
+      Engineering professionals n.e.c.,2129,42186,43379
+    Information technology and telecommunications professionals,213,43629,47379
+      IT specialist managers,2133,47394,51687
+      IT project and programme managers,2134,47639,53249
+"      IT business analysts, architects and systems designers",2135,47468,51502
+      Programmers and software development professionals,2136,42327,46012
+      Web design and development professionals,2137,31174,33442
+      Information technology and telecommunications professionals n.e.c.,2139,39505,43188
+    Conservation and environment professionals,214,33865,35498
+      Conservation professionals,2141,31161,32489
+      Environment professionals,2142,34411,36475
+    Research and development managers ,215,45534,48559
+      Research and development managers,2150,45534,48559
+  Health professionals,22,30580,35140
+    Health professionals,221,42276,53732
+      Medical practitioners,2211,60673,70653
+      Psychologists,2212,33742,38139
+      Pharmacists,2213,36700,36214
+      Ophthalmic opticians,2214,x,34848
+      Dental practitioners,2215,x,57132
+      Veterinarians,2216,35820,35253
+      Medical radiographers,2217,35209,33701
+      Podiatrists,2218,27655,29696
+      Health professionals n.e.c.,2219,30622,32743
+    Therapy professionals,222,27874,28163
+      Physiotherapists,2221,28799,28803
+      Occupational therapists,2222,26229,27231
+      Speech and language therapists,2223,24667,25568
+      Therapy professionals n.e.c.,2229,27278,29944
+    Nursing and midwifery professionals,223,28347,27903
+      Nurses,2231,28280,27811
+      Midwives,2232,29373,29920
+  Teaching and educational professionals,23,35085,35091
+    Teaching and educational professionals,231,35085,35091
+      Higher education teaching professionals,2311,47279,46427
+      Further education teaching professionals,2312,32826,31059
+      Secondary education teaching professionals,2314,36646,35348
+      Primary and nursery education teaching professionals,2315,31824,30965
+      Special needs education teaching professionals,2316,30718,29262
+      Senior professionals of educational establishments,2317,54020,53807
+      Education advisers and school inspectors,2318,33681,34549
+      Teaching and other educational professionals n.e.c.,2319,19550,20055
+"  Business, media and public service professionals",24,38007,43871
+    Legal professionals,241,47573,61494
+      Barristers and judges,2412,x,x
+      Solicitors,2413,41100,50526
+      Legal professionals n.e.c.,2419,68907,83125
+"    Business, research and administrative professionals",242,40634,46237
+      Chartered and certified accountants,2421,35811,39294
+      Management consultants and business analysts,2423,40133,44890
+      Business and financial project management professionals,2424,47908,54049
+"      Actuaries, economists and statisticians",2425,44203,56034
+      Business and related research professionals,2426,33241,33818
+"      Business, research and administrative professionals n.e.c.",2429,41300,41375
+"    Architects, town planners and surveyors",243,39025,41972
+      Architects,2431,40725,45999
+      Town planning officers,2432,33314,39124
+      Quantity surveyors,2433,42742,44297
+      Chartered surveyors,2434,35599,38959
+      Chartered architectural technologists,2435,x,41782
+      Construction project managers and related professionals,2436,38180,41020
+    Welfare professionals,244,29603,29612
+      Social workers,2442,32699,31550
+      Probation officers,2443,31305,30382
+      Clergy,2444,25444,24522
+      Welfare professionals n.e.c.,2449,28400,28906
+    Librarians and related professionals,245,22917,24175
+      Librarians,2451,22521,24403
+      Archivists and curators,2452,24586,23774
+    Quality and regulatory professionals,246,38777,43314
+      Quality control and planning engineers,2461,36125,37400
+      Quality assurance and regulatory professionals,2462,42100,47450
+      Environmental health professionals,2463,35446,34090
+    Media professionals,247,33837,39235
+"      Journalists, newspaper and periodical editors",2471,31961,37690
+      Public relations professionals,2472,30075,35080
+      Advertising accounts managers and creative directors,2473,39975,46319
+Associate professional and technical occupations,3,30708,35794
+"  Science, engineering and technology associate professionals",31,29055,30857
+"    Science, engineering and production technicians",311,27995,29966
+      Laboratory technicians,3111,19997,22601
+      Electrical and electronics technicians,3112,33960,35310
+      Engineering technicians,3113,33268,35600
+      Building and civil engineering technicians,3114,x,31494
+      Quality assurance technicians,3115,27126,30616
+"      Planning, process and production technicians",3116,29579,32599
+"      Science, engineering and production technicians n.e.c.",3119,27516,28932
+    Draughtspersons and related architectural technicians,312,29590,30633
+      Architectural and town planning technicians,3121,28691,28309
+      Draughtspersons,3122,30196,31725
+    Information technology technicians,313,30215,32218
+      IT operations technicians,3131,30764,32831
+      IT user support technicians,3132,29728,31694
+  Health and social care associate professionals,32,22994,22921
+    Health associate professionals,321,25680,27329
+      Paramedics,3213,38889,37491
+      Dispensing opticians,3216,20576,21505
+      Pharmaceutical technicians,3217,20587,20505
+      Medical and dental technicians,3218,25961,27011
+      Health associate professionals n.e.c.,3219,18173,19374
+    Welfare and housing associate professionals,323,22323,21450
+      Youth and community workers,3231,22125,20651
+      Child and early years officers,3233,21474,21737
+      Housing officers,3234,26442,25438
+      Counsellors,3235,18526,19296
+      Welfare and housing associate professionals n.e.c.,3239,21036,20677
+  Protective service occupations,33,38156,37203
+    Protective service occupations,331,38156,37203
+      NCOs and other ranks,3311,,
+      Police officers (sergeant and below),3312,41120,40263
+      Fire service officers (watch manager and below),3313,35425,33244
+      Prison service officers (below principal officer),3314,30386,28627
+      Police community support officers,3315,25171,25298
+      Protective service associate professionals n.e.c.,3319,33812,37033
+"  Culture, media and sports occupations",34,23425,27071
+"    Artistic, literary and media occupations",341,28183,31448
+      Artists,3411,x,26065
+"      Authors, writers and translators",3412,27443,31060
+"      Actors, entertainers and presenters",3413,x,x
+      Dancers and choreographers,3414,x,x
+      Musicians,3415,x,23279
+"      Arts officers, producers and directors",3416,36869,42237
+"      Photographers, audio-visual and broadcasting equipment operators",3417,24807,27183
+    Design occupations,342,27803,29252
+      Graphic designers,3421,26327,27724
+"      Product, clothing and related designers",3422,29506,31343
+    Sports and fitness occupations,344,x,x
+      Sports players,3441,x,x
+"      Sports coaches, instructors and officials",3442,x,13181
+      Fitness instructors,3443,x,10197
+  Business and public service associate professionals,35,33287,40391
+    Transport associate professionals,351,74047,77811
+      Air traffic controllers,3511,94420,93939
+      Aircraft pilots and flight engineers,3512,75934,82070
+      Ship and hovercraft officers,3513,x,46444
+    Legal associate professionals,352,28450,35976
+      Legal associate professionals,3520,28450,35976
+"    Business, finance and related associate professionals",353,32228,40145
+"      Estimators, valuers and assessors",3531,30000,33652
+      Brokers,3532,x,x
+      Insurance underwriters,3533,33112,46095
+      Finance and investment analysts and advisers,3534,35817,44310
+      Taxation experts,3535,46080,53053
+      Importers and exporters,3536,28884,29836
+      Financial and accounting technicians,3537,40944,41607
+      Financial accounts managers,3538,35170,43101
+      Business and related associate professionals n.e.c.,3539,27448,29565
+"    Sales, marketing and related associate professionals",354,37041,44221
+      Buyers and procurement officers,3541,30609,32742
+      Business sales executives,3542,31827,36338
+      Marketing associate professionals,3543,27463,31050
+      Estate agents and auctioneers,3544,x,23388
+      Sales accounts and business development managers,3545,45347,53886
+      Conference and exhibition managers and organisers,3546,23944,23503
+    Conservation and environmental associate professionals,355,22302,24244
+      Conservation and environmental associate professionals,3550,22302,24244
+    Public services and other associate professionals,356,29551,30600
+      Public services associate professionals,3561,31996,32662
+      Human resources and industrial relations officers,3562,27845,30227
+      Vocational and industrial trainers and instructors,3563,27309,28076
+      Careers advisers and vocational guidance specialists,3564,25398,24744
+      Inspectors of standards and regulations,3565,29001,33744
+      Health and safety officers,3567,35000,35605
+Administrative and secretarial occupations,4,19361,21161
+  Administrative occupations,41,20218,22097
+    Administrative occupations: Government and related organisations,411,23413,24226
+      National government administrative occupations,4112,24400,25339
+      Local government administrative occupations,4113,21828,22591
+      Officers of non-governmental organisations,4114,21724,22922
+    Administrative occupations: Finance,412,20813,22655
+      Credit controllers,4121,22491,22287
+"      Book-keepers, payroll managers and wages clerks",4122,21250,22958
+      Bank and post office clerks,4123,19652,22617
+      Finance officers,4124,23699,30223
+      Financial administrative occupations n.e.c.,4129,19565,20596
+    Administrative occupations: Records,413,20540,21740
+      Records clerks and assistants,4131,19661,20628
+      Pensions and insurance clerks and assistants,4132,21201,23616
+      Stock control clerks and assistants,4133,21218,22386
+      Transport and distribution clerks and assistants,4134,24656,25808
+      Library clerks and assistants,4135,13584,13711
+      Human resources administrative occupations,4138,19306,21184
+    Other administrative occupations,415,17845,19471
+      Sales administrators,4151,20449,21403
+      Other administrative occupations n.e.c.,4159,17574,19328
+    Administrative occupations: Office managers and supervisors,416,28314,31234
+      Office managers,4161,29500,32137
+      Office supervisors,4162,25459,26167
+  Secretarial and related occupations,42,15743,17473
+    Secretarial and related occupations,421,15743,17473
+      Medical secretaries,4211,17074,16907
+      Legal secretaries,4212,19085,20758
+      School secretaries,4213,16209,16326
+      Company secretaries,4214,x,16767
+      Personal assistants and other secretaries,4215,19063,20869
+      Receptionists,4216,13622,14261
+      Typists and related keyboard occupations,4217,18255,20410
+Skilled trades occupations,5,26963,28268
+  Skilled agricultural and related trades,51,20074,20778
+    Agricultural and related trades,511,20074,20778
+      Farmers,5111,24967,25470
+      Horticultural trades,5112,17800,17458
+      Gardeners and landscape gardeners,5113,20121,20380
+      Groundsmen and greenkeepers,5114,19679,20345
+      Agricultural and fishing trades n.e.c.,5119,x,x
+"  Skilled metal, electrical and electronic trades",52,31310,32534
+"    Metal forming, welding and related trades",521,27431,29200
+      Smiths and forge workers,5211,x,18706
+"      Moulders, core makers and die casters",5212,x,x
+      Sheet metal workers,5213,26499,28637
+"      Metal plate workers, and riveters",5214,30448,29916
+      Welding trades,5215,27372,28565
+      Pipe fitters,5216,x,x
+"    Metal machining, fitting and instrument making trades",522,31481,33174
+      Metal machining setters and setter-operators,5221,27618,29016
+"      Tool makers, tool fitters and markers-out",5222,29631,29293
+      Metal working production and maintenance fitters,5223,32719,34178
+      Precision instrument makers and repairers,5224,26831,27896
+      Air-conditioning and refrigeration engineers,5225,35235,34334
+    Vehicle trades,523,28000,28950
+"      Vehicle technicians, mechanics and electricians",5231,27828,28424
+      Vehicle body builders and repairers ,5232,26433,26970
+      Vehicle paint technicians,5234,26772,26167
+      Aircraft maintenance and related trades,5235,37766,42684
+      Boat and ship builders and repairers,5236,30883,32387
+      Rail and rolling stock builders and repairers,5237,42126,43624
+    Electrical and electronic trades,524,33221,33984
+      Electricians and electrical fitters,5241,32798,33046
+      Telecommunications engineers,5242,33040,35814
+"      TV, video and audio engineers",5244,32607,32184
+      IT engineers,5245,30998,32661
+      Electrical and electronic trades n.e.c.,5249,34322,35002
+"    Skilled metal, electrical and electronic trades supervisors",525,34836,36597
+"      Skilled metal, electrical and electronic trades supervisors",5250,34836,36597
+  Skilled construction and building trades,53,27706,28662
+    Construction and building trades,531,26831,27327
+      Steel erectors,5311,25135,25826
+      Bricklayers and masons,5312,26588,26087
+"      Roofers, roof tilers and slaters",5313,24820,25817
+      Plumbers and heating and ventilating engineers,5314,30534,30596
+      Carpenters and joiners,5315,26847,27026
+"      Glaziers, window fabricators and fitters",5316,22134,22696
+      Construction and building trades n.e.c.,5319,25970,26724
+    Building finishing trades,532,25009,25888
+      Plasterers,5321,28049,26266
+      Floorers and wall tilers,5322,24870,28151
+      Painters and decorators,5323,24507,24651
+    Construction and building trades supervisors,533,37029,39153
+      Construction and building trades supervisors,5330,37029,39153
+"  Textiles, printing and other skilled trades",54,19699,20277
+    Textiles and garments trades,541,20543,21362
+      Weavers and knitters,5411,22193,22234
+      Upholsterers,5412,23641,22925
+      Footwear and leather working trades,5413,20516,22503
+      Tailors and dressmakers,5414,x,x
+"      Textiles, garments and related trades n.e.c.",5419,x,18552
+    Printing trades,542,23494,24657
+      Pre-press technicians,5421,x,25199
+      Printers,5422,25696,26514
+      Print finishing and binding workers,5423,22147,22282
+    Food preparation and hospitality trades,543,19096,19395
+      Butchers,5431,21542,22227
+      Bakers and flour confectioners,5432,18214,19193
+      Fishmongers and poultry dressers,5433,17825,19366
+      Chefs,5434,20362,20748
+      Cooks,5435,12747,13306
+      Catering and bar managers,5436,19693,19849
+    Other skilled trades,544,23196,24072
+"      Glass and ceramics makers, decorators and finishers",5441,21104,21786
+      Furniture makers and other craft woodworkers,5442,23191,23486
+      Florists,5443,x,14025
+      Other skilled trades n.e.c.,5449,26030,27284
+"Caring, leisure and other service occupations",6,14790,15398
+  Caring personal service occupations,61,14674,15173
+    Childcare and related personal services,612,12630,13001
+      Nursery nurses and assistants,6121,13469,13745
+      Childminders and related occupations,6122,13260,15384
+      Playworkers,6123,5740,7007
+      Teaching assistants,6125,12939,13298
+      Educational support assistants,6126,12356,12573
+    Animal care and control services,613,x,17534
+      Veterinary nurses,6131,17237,17948
+      Pest control officers,6132,23211,24003
+      Animal care services occupations n.e.c.,6139,x,16374
+    Caring personal services,614,16070,16401
+      Nursing auxiliaries and assistants,6141,17639,17322
+      Ambulance staff (excluding paramedics),6142,23564,23708
+      Dental nurses,6143,14822,15121
+      Houseparents and residential wardens,6144,x,20990
+      Care workers and home carers,6145,14871,15333
+      Senior care workers,6146,18178,18623
+      Care escorts,6147,8039,9347
+"      Undertakers, mortuary and crematorium assistants",6148,23049,21511
+"  Leisure, travel and related personal service occupations",62,15779,16561
+    Leisure and travel services,621,17781,18885
+      Sports and leisure assistants,6211,12097,12685
+      Travel agents,6212,x,20105
+      Air travel assistants,6214,19009,19646
+      Rail travel assistants,6215,36238,36228
+      Leisure and travel service occupations n.e.c.,6219,x,10173
+    Hairdressers and related services,622,11251,12569
+      Hairdressers and barbers,6221,10954,12451
+      Beauticians and related occupations,6222,11652,12757
+    Housekeeping and related services,623,17373,16544
+      Housekeepers and related occupations,6231,13453,14008
+      Caretakers,6232,18749,17825
+    Cleaning and housekeeping managers and supervisors,624,16574,16555
+      Cleaning and housekeeping managers and supervisors,6240,16574,16555
+Sales and customer service occupations,7,13779,15645
+  Sales occupations,71,12099,13914
+    Sales assistants and retail cashiers,711,11365,12966
+      Sales and retail assistants,7111,11293,12973
+      Retail cashiers and check-out operators,7112,10058,10788
+      Telephone salespersons,7113,20091,20428
+      Pharmacy and other dispensing assistants,7114,13664,13224
+      Vehicle and parts salespersons and advisers,7115,23845,25848
+    Sales related occupations,712,19620,19990
+      Collector salespersons and credit agents,7121,x,x
+"      Debt, rent and other cash collectors",7122,19045,19879
+      Roundspersons and van salespersons,7123,21531,22181
+      Market and street traders and assistants,7124,x,x
+      Merchandisers and window dressers,7125,17147,17957
+      Sales related occupations n.e.c.,7129,20692,22129
+    Sales supervisors,713,21157,23866
+      Sales supervisors,7130,21157,23866
+  Customer service occupations,72,19239,20407
+    Customer service occupations,721,18050,18323
+      Call and contact centre occupations,7211,17560,18063
+      Telephonists,7213,14589,14750
+      Communication operators,7214,24154,25593
+      Market research interviewers,7215,x,9738
+      Customer service occupations n.e.c.,7219,18129,18228
+    Customer service managers and supervisors,722,27565,30247
+      Customer service managers and supervisors,7220,27565,30247
+"Process, plant and machine operatives",8,24210,25694
+"  Process, plant and machine operatives",81,23130,24635
+    Process operatives,811,21580,23303
+"      Food, drink and tobacco process operatives",8111,20242,21110
+      Glass and ceramics process operatives,8112,23192,23803
+      Textile process operatives,8113,24222,24323
+      Chemical and related process operatives,8114,28609,31831
+      Rubber process operatives,8115,x,28139
+      Plastics process operatives,8116,22123,24672
+      Metal making and treating process operatives,8117,25491,27554
+      Electroplaters,8118,25054,25155
+      Process operatives n.e.c.,8119,24720,25924
+    Plant and machine operatives,812,24421,25832
+      Paper and wood machine operatives,8121,21563,23362
+      Coal mine operatives,8122,21744,24824
+      Quarry workers and related operatives,8123,31665,31072
+      Energy plant operatives,8124,32309,33604
+      Metal working machine operatives,8125,23040,24312
+      Water and sewerage plant operatives,8126,30634,31770
+      Printing machine assistants,8127,22228,23550
+      Plant and machine operatives n.e.c.,8129,24404,24317
+    Assemblers and routine operatives,813,22668,24148
+      Assemblers (electrical and electronic products),8131,24300,24713
+      Assemblers (vehicles and metal goods),8132,29894,30051
+      Routine inspectors and testers,8133,24383,26494
+"      Weighers, graders and sorters",8134,x,18548
+"      Tyre, exhaust and windscreen fitters",8135,21897,22568
+      Sewing machinists,8137,16580,17023
+      Assemblers and routine operatives n.e.c.,8139,21849,22851
+    Construction operatives,814,26073,26899
+"      Scaffolders, stagers and riggers",8141,34140,35291
+      Road construction operatives,8142,28994,30574
+      Rail construction and maintenance operatives,8143,28718,30590
+      Construction operatives n.e.c.,8149,23628,24208
+  Transport and mobile machine drivers and operatives,82,25527,26665
+    Road transport drivers,821,24569,24673
+      Large goods vehicle drivers,8211,30130,29804
+      Van drivers,8212,20471,21192
+      Bus and coach drivers,8213,25202,25419
+      Taxi and cab drivers and chauffeurs,8214,x,14476
+      Driving instructors,8215,x,28985
+    Mobile machine drivers and operatives,822,27550,29477
+      Crane drivers,8221,40412,40635
+      Fork-lift truck drivers,8222,23524,24847
+      Agricultural machinery drivers,8223,25380,26126
+      Mobile machine drivers and operatives n.e.c.,8229,29079,30937
+    Other drivers and transport operatives,823,47015,44726
+      Train and tram drivers,8231,56102,56816
+      Marine and waterways transport operatives,8232,31178,31109
+      Air transport operatives,8233,23722,25205
+      Rail transport operatives,8234,44344,44176
+      Other drivers and transport operatives n.e.c.,8239,x,24146
+Elementary occupations,9,14524,15149
+  Elementary trades and related occupations,91,20478,21176
+    Elementary agricultural occupations,911,19939,19186
+      Farm workers,9111,20860,19904
+      Forestry workers,9112,23958,24049
+      Fishing and other elementary agriculture occupations n.e.c.,9119,x,17027
+    Elementary construction occupations,912,22209,23057
+      Elementary construction occupations,9120,22209,23057
+    Elementary process plant occupations,913,20091,21018
+      Industrial cleaning process occupations,9132,17492,16825
+"      Packers, bottlers, canners and fillers",9134,18959,19850
+      Elementary process plant occupations n.e.c.,9139,21526,22655
+  Elementary administration and service occupations,92,12881,14285
+    Elementary administration occupations,921,25348,23979
+"      Postal workers, mail sorters, messengers and couriers",9211,26044,25445
+      Elementary administration occupations n.e.c.,9219,14662,14085
+    Elementary cleaning occupations,923,8686,10491
+      Window cleaners,9231,x,17157
+      Street cleaners,9232,19387,19204
+      Cleaners and domestics,9233,8144,9768
+"      Launderers, dry cleaners and pressers",9234,13163,13481
+      Refuse and salvage occupations,9235,20294,20942
+      Vehicle valeters and cleaners,9236,17441,16315
+      Elementary cleaning occupations n.e.c.,9239,12948,15836
+    Elementary security occupations,924,10130,13855
+      Security guards and related occupations,9241,22731,22820
+      Parking and civil enforcement occupations,9242,19514,18606
+      School midday and crossing patrol occupations,9244,2886,3673
+      Elementary security occupations n.e.c.,9249,x,14991
+    Elementary sales occupations,925,12010,12754
+      Shelf fillers,9251,11947,12707
+      Elementary sales occupations n.e.c.,9259,12609,13178
+    Elementary storage occupations,926,20466,21573
+      Elementary storage occupations,9260,20466,21573
+    Other elementary services occupations,927,9172,10128
+      Hospital porters,9271,19701,19886
+      Kitchen and catering assistants,9272,9807,10625
+      Waiters and waitresses,9273,8144,9223
+      Bar staff,9274,7629,8949
+      Leisure and theme park attendants,9275,x,7410
+      Other elementary services occupations n.e.c.,9279,14093,12884
+Not Classified,,,

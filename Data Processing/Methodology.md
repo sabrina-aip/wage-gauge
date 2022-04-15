@@ -30,8 +30,8 @@ This data was then formatted into a JSON with the following formatting:
                 'median': 0000000,
                 'mean': 0000000
             }
-						...
-						'year_5': {
+            ...
+            'year_5': {
                 'median': 0000000,
                 'mean': 0000000
             }
@@ -44,8 +44,8 @@ This data was then formatted into a JSON with the following formatting:
                 'median': 0000000,
                 'mean': 0000000
             }
-						...
-						'year_5': {
+            ...
+            'year_5': {
                 'median': 0000000,
                 'mean': 0000000
             }
@@ -74,8 +74,8 @@ This data was then formatted into a JSON with the following formatting:
                 'median': 0000000,
                 'mean': 0000000
             }
-						...
-						'year_5': {
+            ...
+            'year_5': {
                 'median': 0000000,
                 'mean': 0000000
             }
@@ -88,8 +88,8 @@ This data was then formatted into a JSON with the following formatting:
                 'median': 0000000,
                 'mean': 0000000
             }
-						...
-						'year_5': {
+            ...
+            'year_5': {
                 'median': 0000000,
                 'mean': 0000000
             }
@@ -118,8 +118,8 @@ I stored those selections across all the years into a JSON object with the follo
                 'median': 0000000,
                 'mean': 0000000
             }
-						...
-						'year_5': {
+            ...
+            'year_5': {
                 'median': 0000000,
                 'mean': 0000000
             }
@@ -132,8 +132,8 @@ I stored those selections across all the years into a JSON object with the follo
                 'median': 0000000,
                 'mean': 0000000
             }
-						...
-						'year_5': {
+            ...
+            'year_5': {
                 'median': 0000000,
                 'mean': 0000000
             }

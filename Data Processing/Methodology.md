@@ -111,7 +111,7 @@ I used `A_MEDIAN` for the annual median wage and `A_MEAN` for the annual mean wa
 
 I stored those selections across all the years into a JSON object with the following formatting
 
-```json
+```
 {
         'jobA': {
             'year_1': {

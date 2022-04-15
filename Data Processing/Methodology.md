@@ -23,7 +23,7 @@ This data was then selected to the most frequent granularity of occupation, and 
 
 This data was then formatted into a JSON with the following formatting:
 
-```json
+```
 {
         'jobA': {
             'year_1': {
@@ -67,7 +67,7 @@ Assumed average refers to mean and stores average data as mean to retain consist
 
 This data was then formatted into a JSON with the following formatting:
 
-```json
+```
 {
         'jobA': {
             'year_1': {

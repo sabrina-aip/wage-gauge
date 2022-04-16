@@ -4,7 +4,7 @@ html, body{
 }
 .container {
   width: 80%;
-  border: white 1px solid;
+  border: white 0px solid;
   padding: 10px;
   display: inline-block; /* impacts the alignment within the parent*/
   overflow: hidden;
@@ -169,4 +169,9 @@ iframe.ytframe {
 a:focus, a:active, a:visited, a:link { 
   text-decoration: none;
   color: #E9EAE8;
+}
+
+.flex-split {
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,165 +1,101 @@
-#inactive {
-  color: gray;
+html, body{
+  margin:0;
+  padding:0;
 }
-
-.btn#inactive {
-  background-color: gainsboro;
-  border: solid 1.7px gainsboro;
-  color: white;
-  pointer-events: none;
-}
-
-.btn {
-  background-color: royalblue;
-  border: solid 1.7px royalblue;
-  padding: 5px 25px 5px 25px;
-  border-radius: 25px;
-  color:white;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background-color: black;
-  padding: 5px 25px 5px 25px;
-  border: solid 1.7px black;
-  color: white;
-  text-decoration: none;
-}
-
-img {
-  width: auto;
-  height: 120px;
-}
-
-ol {
-  text-align: left;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 50px 0px 50px;
-}
-
-.footer {
-  position: fixed;
-  height: 50px;
-  bottom: 20px;
-  left: 0px;
-  right: 50px;
-  margin-bottom: 0px;
-}
-
-.social-links {
-  font-family: Font Awesome 5 Brands;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 41px;
-  text-align: center;
-  color: #000000;
-}
-
-button {
-  font-size: 25px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
+.container {
+  width: 60%;
+  border: white 1px solid;
+  padding: 10px;
+  display: inline-block; /* impacts the alignment within the parent*/
   overflow: hidden;
-  outline: none;
 }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+.center{
+  align-items: center;
   text-align: center;
-  margin-bottom: 50px;
+}
+
+.left {
+  text-align: left;
+  align-items: left;
 }
 
 h1 {
-  margin: 0 0 20px 0;
-  font-size: 26pt;
+  font-family: Koulen;
+  font-size: 700%;
+  color: white;
+  padding: 0;
+  margin: 0;
+  line-height: 100%; /* reduces the leading that was being annoying */
 }
 
-input {
-  padding: 5px 5px 5px 5px;
-  border-radius: 20px;
-  border: solid black 1.5px;
-  text-decoration: none;
+h2 {
+  font-family: Koulen;
+  font-size: 400%;
+  color: #06070B;
+  padding: 0;
+  margin: 0;
+  line-height: 100%; /* reduces the leading that was being annoying */
+}
+
+
+.wage {
+  transform: translateX(-5%);
+}
+
+.gauge {
+  transform: translateX(3%);
+}
+
+button {
+  font-family: Inter;
   text-align: center;
-
+  font-size: 100%;
+  color: #06070B;
+  background-color: #E9EAE8;
+  line-height: 100%;
+  padding: 10px 15px 10px 15px;
+  border: 0;
+  margin-top: 30px;
 }
 
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-60%);
+.green {
+  background-color: #92DC58;
 }
 
-.fab {
-  color: #000000;
-  text-decoration: none;
-  transform: scale(60%);
+.offwhite {
+  color: #E9EAE8;
 }
 
-.social-links {
-  text-align: right;
+.black {
+  color:  #06070B;
 }
 
-.player-wrapper {
-  left: 0; 
-  width: 100%; 
-  height: 0; 
-  position: relative; 
-  padding-bottom: 30%;
-  max-width: 50%;
-}
-
-.player {
-  border: 0; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 100%; 
-  position: absolute;
-}
-
-.parent {
-  display: flex;
-  margin: 200px;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-
-.end-stat {
-  text-align: center;
-}
-
-/* For Firefox */
-input[type='number'] {
-  -moz-appearance:textfield;
-}
-
-/* Webkit browsers like Safari and Chrome */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+p {
+  font-family: Inter;
+  font-size: 100%;
+  line-height: 100%;
+  padding: 0;
   margin: 0;
 }
 
-.detail-wrapper {
-  margin: 20px 0 20px 0;
+mark {
+  transform: translate(-50px,-50px);
 }
 
-#game-mode-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 40px;
-  text-align: justify;
-  -moz-text-align-last: center;
-  text-align-last: center;
+
+#section-1 {
+  text-align: center;
+  background-color: #06070B;
+  min-width: 100%;
+  margin: 0;
+  padding: 7% 0 7% 0;
+}
+
+#section-2 {
+  text-align: center;
+  background-color: #E9EAE8;
+  min-width: 100%;
+  margin: 0;
+  padding: 2% 0 2% 0;
 }

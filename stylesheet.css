@@ -3,12 +3,38 @@ html, body{
   padding:0;
 }
 .container {
-  width: 60%;
+  width: 80%;
   border: white 1px solid;
   padding: 10px;
   display: inline-block; /* impacts the alignment within the parent*/
   overflow: hidden;
 }
+
+
+#section-1 {
+  text-align: center;
+  background-color: #06070B;
+  min-width: 100%;
+  margin: 0;
+  padding: 10% 0 10% 0;
+}
+
+#section-2 {
+  text-align: center;
+  background-color: #E9EAE8;
+  min-width: 100%;
+  margin: 0;
+  padding: 2% 0 2% 0;
+}
+
+#footer{
+  text-align: center;
+  background-color: #06070B;
+  min-width: 100%;
+  margin: 0;
+  padding: 2% 0 2% 0;
+}
+
 
 .center{
   align-items: center;
@@ -38,13 +64,12 @@ h2 {
   line-height: 100%; /* reduces the leading that was being annoying */
 }
 
-
-.wage {
-  transform: translateX(-5%);
-}
-
-.gauge {
-  transform: translateX(3%);
+p {
+  font-family: Inter;
+  font-size: 100%;
+  line-height: 130%;
+  padding: 0;
+  margin: 0;
 }
 
 button {
@@ -59,6 +84,15 @@ button {
   margin-top: 30px;
 }
 
+.wage {
+  transform: translateX(-5%);
+}
+
+.gauge {
+  transform: translateX(3%);
+}
+
+
 .green {
   background-color: #92DC58;
 }
@@ -71,31 +105,68 @@ button {
   color:  #06070B;
 }
 
-p {
-  font-family: Inter;
-  font-size: 100%;
+/* text highlighter inspired by https://codepen.io/alvarotrigo/pen/rNpaBJJ */
+
+.highlight-container, .highlight {
+  position: relative;
+}
+
+.highlight-container {
+  display: inline-block;
+}
+.highlight-container:before {
+  content: " ";
+  display: block;
+  height: 50%;
+  width: 90%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: #92DC58;
+  top: 20px;
+  padding: 10px 3px 3px 10px;
+}
+
+
+/* YT video container via https://silvercircle.subspace.cc/webdev/css/embed-youtube-any-size-and-correct-aspect/ */
+
+div.ytcontainer {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+iframe.ytframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* footer management */
+
+.social-links {
+  font-family: Font Awesome 5 Brands;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 150%;
   line-height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-mark {
-  transform: translate(-50px,-50px);
+  text-align: right;
+  color: #E9EAE8;
 }
 
 
-#section-1 {
-  text-align: center;
-  background-color: #06070B;
-  min-width: 100%;
-  margin: 0;
-  padding: 7% 0 7% 0;
+.page-links {
+  font-family: Inter;
+  font-size:100%;
+  line-height: 100%;
+  text-align: left;
+  color: #E9EAE8;
 }
 
-#section-2 {
-  text-align: center;
-  background-color: #E9EAE8;
-  min-width: 100%;
-  margin: 0;
-  padding: 2% 0 2% 0;
+a:focus, a:active, a:visited, a:link { 
+  text-decoration: none;
+  color: #E9EAE8;
 }

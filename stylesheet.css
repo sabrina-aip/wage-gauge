@@ -2,6 +2,11 @@ html, body{
   margin:0;
   padding:0;
 }
+
+html {
+  scroll-behavior:smooth;
+}
+
 .container {
   width: 80%;
   border: white 0px solid;
@@ -64,6 +69,15 @@ h2 {
   line-height: 100%; /* reduces the leading that was being annoying */
 }
 
+h4 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 300%;
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 p {
   font-family: Inter;
   font-size: 100%;
@@ -72,7 +86,7 @@ p {
   margin: 0;
 }
 
-button {
+.btn {
   font-family: Inter;
   text-align: center;
   font-size: 100%;
@@ -81,27 +95,43 @@ button {
   line-height: 100%;
   padding: 10px 15px 10px 15px;
   border: 0;
-  margin-top: 30px;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.wage {
+.big-arrow {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+#wage {
   transform: translateX(-5%);
 }
 
-.gauge {
+#gauge {
   transform: translateX(3%);
 }
 
-
-.green {
+#green {
   background-color: #92DC58;
+  border: #92DC58 1px solid;
+  outline-offset: -1px;
 }
 
-.offwhite {
+#green:hover {
+  background-color: #06070B;
+  border: #E9EAE8 1px solid;
+  outline-offset: -1px;
   color: #E9EAE8;
 }
 
-.black {
+#offwhite {
+  color: #E9EAE8;
+  text-decoration: none;
+}
+
+#black {
   color:  #06070B;
 }
 
@@ -158,15 +188,41 @@ iframe.ytframe {
 }
 
 
-.page-links {
+.footer-link {
   font-family: Inter;
   font-size:100%;
-  line-height: 100%;
+  line-height: 80%;
   text-align: left;
+  color: #E9EAE8;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.25px;
+  top: 140%;
+  bottom: 0;
+  left: 0;
+  background-color: #E9EAE8;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.footer-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a.fab:focus, a.fab:active, a.fab:visited, a.fab:link { 
+  text-decoration: none;
   color: #E9EAE8;
 }
 
-a:focus, a:active, a:visited, a:link { 
+a.footer-link:focus, a.footer-link:active, a.footer-link:visited, a.footer-link:link { 
   text-decoration: none;
   color: #E9EAE8;
 }
@@ -175,3 +231,5 @@ a:focus, a:active, a:visited, a:link {
   display: flex;
   justify-content: space-between;
 }
+
+

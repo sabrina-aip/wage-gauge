@@ -58,11 +58,15 @@ function addTime(){
 
 ///////////////////////////////////////
 
-var jsonCall = $.getJSON('Data Processing/processed data/UK_2017-2021.json',function(){
-  var jobData = JSON.parse(jsonCall.responseText);
-  console.log(jobData);
-  });
+q1
 
+
+var jsonCall = $.getJSON(dataPath,function(){
+  var jobData = JSON.parse(jsonCall.responseText);
+  for (e in jobData){
+    console.log(e)
+  }
+  });
 
 ///////////////////////////////////////
 

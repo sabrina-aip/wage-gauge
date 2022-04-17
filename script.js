@@ -52,20 +52,28 @@ function addTime(){
   sec.textContent = convertToString(second);
 }
 
-///////////////////////////////////////
+/*///////////////////////////////////////
 
 // data selection
 
-///////////////////////////////////////
+// the idea is to call the JSON data once and select the data
+// i need for the questions before the questions even start populating
 
-q1
+///////////////////////////////////////*/
 
+var nationalMedianIncome;
+var years = ['2017', '2018', '2019', '2020', '2021']
+var q2_jobs = {};
+var q3_jobs = {};
+var q4_jobs = {};
+var q5_jobs = {};
 
-var jsonCall = $.getJSON(dataPath,function(){
+var jsonCall = $.getJSON('Data Processing/processed data/CAN_2017-2021.json'/*dataPath*/,function(){
   var jobData = JSON.parse(jsonCall.responseText);
-  for (e in jobData){
-    console.log(e)
-  }
+  var keys = Object.keys(jobData)
+  console.log(keys)
+  nationalMedianIncome = jobData[keys[0]]['2021']['median'] // this structure assumes that the first row has the national data
+  console.log(nationalMedianIncome)
   });
 
 ///////////////////////////////////////

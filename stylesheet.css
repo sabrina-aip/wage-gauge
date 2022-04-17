@@ -133,11 +133,13 @@ a {
 
 
 .btn {
+  cursor: pointer;
   font-family: Inter;
   text-align: center;
   font-size: 100%;
   color: #06070B;
   background-color: #E9EAE8;
+  border: #E9EAE8 1px solid;
   line-height: 100%;
   padding: 10px 15px 10px 15px;
   border: 0;
@@ -146,6 +148,18 @@ a {
   display: inline-block;
   transition: 75ms ease-in-out;
 }
+
+.btn.quiz {
+  margin: 20px 10px 20px 10px;
+}
+
+.btn.quiz:hover{
+  background-color: #92DC58;
+}
+
+
+
+
 
 .big-arrow {
   display: inline-block;
@@ -170,7 +184,6 @@ a {
 #green {
   background-color: #92DC58;
   border: #92DC58 1px solid;
-  outline-offset: -1px;
 }
 
 #green-text {
@@ -180,7 +193,6 @@ a {
 #green:hover {
   background-color: #06070B;
   border: #E9EAE8 1px solid;
-  outline-offset: -1px;
   color: #E9EAE8;
 }
 

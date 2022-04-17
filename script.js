@@ -19,6 +19,10 @@ const q_sel = document.querySelector('.question')
 const q_el_sel = document.querySelector('.question-element')
 const nav_btn = document.querySelector('.navigator')
 
+const opt1_sel = document.querySelector('#option-1')
+const opt2_sel = document.querySelector('#option-2')
+const opt3_sel = document.querySelector('#option-3')
+
 // variables for timer
 let second = 00;
 let minute = 00;
@@ -103,16 +107,52 @@ var questionText = [
   `Which job's wages took the <span id='green-text'>biggest hit</span> in <span id='green-text'>2020</span>?`,
   `Which job saw the <span id='green-text'>biggest raise</span> from <span id='green-text'>2020</span> to <span id='green-text'>2021</span>?`
 ];
-var questionOptions;
-var answer;
+var questionContent = [
+  generateTriplet('a','b','c'),
+  ``,
+  ``,
+  ``,
+  ``
+];
+var answerContent = [
+  generateTriplet('a','b','c'),
+  ``,
+  ``,
+  ``,
+  ``
+];
 var questionNumber = 0
 
+function generateTriplet(opt1, opt2, opt3){
+  let str;
+  str = 
+  `<div class="flex-triplet">
+    <span id="flex-triplet-child">
+        <div class="quiz btn" id='option-1'>${opt1}</div>
+    </span>
+    <span id="flex-triplet-child">
+        <div href="" class="quiz btn" id='option-2'>${opt2}</div>
+    </span>
+    <span id="flex-triplet-child">
+        <div href="" class="quiz btn" id='option-3'>${opt3}</div>
+    </span>
+  </div>
+  `
+  return str
 
+}
 
 function askQuestion(questionNumber) {
   console.log(questionNumber)
+  score_fromDoc.textContent = score;
   q_num_sel.innerHTML = `Question ${questionNumber + 1}/${NUM_QUESTIONS}`
   q_sel.innerHTML = questionText[questionNumber]
+  q_el_sel.innerHTML = questionContent[questionNumber]
+
+  console.log(opt1_sel)
+
+  
+
   nav_btn.textContent = 'submit answer ->'
   nav_btn.addEventListener('click',checkAnswer)
 }
@@ -131,7 +171,12 @@ function checkAnswer(e){
 }
 
 function showAnswer() {
-  console.log('RUN: showAnswer')
+  if (submission == answer){
+    score ++;
+    answerContent.innerHTML = `Correct! ${answerContent[questionNumber]}`
+  } else {
+    answerContent.innerHTML = `Incorrect. ${answerContent[questionNumber]}`
+  }
 }
 
 function nextQuestion(e) {

@@ -23,7 +23,7 @@
     },
     "Elected officers and representatives": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 17260.0
         }
     },
@@ -86,7 +86,7 @@
         },
         "2020": {
             "median": 45530.0,
-            "mean": 
+            "mean": "null"
         },
         "2021": {
             "median": 45162.0,
@@ -174,7 +174,7 @@
         },
         "2020": {
             "median": 59687.0,
-            "mean": 
+            "mean": "null"
         }
     },
     "Human resource managers and directors": {
@@ -217,7 +217,7 @@
             "mean": 79009.0
         },
         "2021": {
-            "median": ,
+            "median": "null",
             "mean": 63735.0
         }
     },
@@ -243,7 +243,7 @@
             "mean": 62670.0
         }
     },
-    "Ficial institution managers and directors": {
+    "Financial institution managers and directors": {
         "2017": {
             "median": 50779.0,
             "mean": 76413.0
@@ -261,7 +261,7 @@
             "mean": 78181.0
         },
         "2021": {
-            "median": ,
+            "median": "null",
             "mean": 74997.0
         }
     },
@@ -333,7 +333,7 @@
     },
     "Senior officers in fire, ambulance, prison and related services": {
         "2017": {
-            "median": ,
+            "median": "null",
             "mean": 50360.0
         },
         "2018": {
@@ -381,7 +381,7 @@
             "mean": 40185.0
         },
         "2018": {
-            "median": ,
+            "median": "null",
             "mean": 41469.0
         },
         "2019": {
@@ -393,7 +393,7 @@
             "mean": 39156.0
         },
         "2021": {
-            "median": ,
+            "median": "null",
             "mean": 38035.0
         }
     },
@@ -443,11 +443,11 @@
     },
     "Managers and proprietors in forestry, fishing and related services": {
         "2017": {
-            "median": ,
+            "median": "null",
             "mean": 26258.0
         },
         "2018": {
-            "median": ,
+            "median": "null",
             "mean": 25059.0
         },
         "2019": {
@@ -455,7 +455,7 @@
             "mean": 28545.0
         },
         "2020": {
-            "median": ,
+            "median": "null",
             "mean": 30247.0
         },
         "2021": {
@@ -505,7 +505,7 @@
     },
     "Publicans and managers of licensed premises": {
         "2017": {
-            "median": ,
+            "median": "null",
             "mean": 28028.0
         },
         "2018": {
@@ -513,7 +513,7 @@
             "mean": 25531.0
         },
         "2019": {
-            "median": ,
+            "median": "null",
             "mean": 27528.0
         },
         "2020": {
@@ -532,7 +532,7 @@
         },
         "2018": {
             "median": 28638.0,
-            "mean": 
+            "mean": "null"
         },
         "2019": {
             "median": 29948.0,
@@ -549,11 +549,11 @@
     },
     "Travel agency managers and proprietors": {
         "2017": {
-            "median": ,
+            "median": "null",
             "mean": 30804.0
         },
         "2019": {
-            "median": ,
+            "median": "null",
             "mean": 33690.0
         }
     },
@@ -575,7 +575,7 @@
             "mean": 33468.0
         },
         "2021": {
-            "median": ,
+            "median": "null",
             "mean": 38430.0
         }
     },
@@ -633,17 +633,17 @@
             "mean": 44226.0
         },
         "2019": {
-            "median": ,
+            "median": "null",
             "mean": 46776.0
         },
         "2021": {
             "median": 33071.0,
-            "mean": 
+            "mean": "null"
         }
     },
     "Hairdressing and beauty salon managers and proprietors": {
         "2017": {
-            "median": ,
+            "median": "null",
             "mean": 22627.0
         },
         "2018": {
@@ -669,11 +669,11 @@
             "mean": 42863.0
         },
         "2018": {
-            "median": ,
+            "median": "null",
             "mean": 47124.0
         },
         "2019": {
-            "median": ,
+            "median": "null",
             "mean": 49974.0
         },
         "2020": {
@@ -682,7 +682,7 @@
         },
         "2021": {
             "median": 45597.0,
-            "mean": 
+            "mean": "null"
         }
     },
     "Managers and proprietors in other services n.e.c.": {
@@ -1215,33 +1215,33 @@
             "mean": 31730.0
         },
         "2018": {
-            "median": ,
+            "median": "null",
             "mean": 29036.0
         },
         "2019": {
-            "median": ,
+            "median": "null",
             "mean": 34848.0
         },
         "2020": {
-            "median": ,
+            "median": "null",
             "mean": 32593.0
         },
         "2021": {
-            "median": ,
+            "median": "null",
             "mean": 33382.0
         }
     },
     "Dental practitioners": {
         "2017": {
-            "median": ,
+            "median": "null",
             "mean": 46734.0
         },
         "2019": {
-            "median": ,
+            "median": "null",
             "mean": 57132.0
         },
         "2020": {
-            "median": ,
+            "median": "null",
             "mean": 47503.0
         }
     },
@@ -1303,7 +1303,7 @@
             "mean": 29696.0
         },
         "2020": {
-            "median": ,
+            "median": "null",
             "mean": 27314.0
         }
     },
@@ -1559,7 +1559,7 @@
             "mean": 28644.0
         },
         "2021": {
-            "median": ,
+            "median": "null",
             "mean": 28446.0
         }
     },
@@ -1603,7 +1603,7 @@
             "mean": 36594.0
         },
         "2021": {
-            "median": ,
+            "median": "null",
             "mean": 39248.0
         }
     },
@@ -1625,21 +1625,21 @@
             "mean": 20504.0
         },
         "2021": {
-            "median": ,
+            "median": "null",
             "mean": 24234.0
         }
     },
     "Barristers and judges": {
         "2017": {
             "median": 28567.0,
-            "mean": 
+            "mean": "null"
         },
         "2018": {
             "median": 34777.0,
             "mean": 38817.0
         },
         "2020": {
-            "median": ,
+            "median": "null",
             "mean": 39706.0
         },
         "2021": {
@@ -1735,7 +1735,7 @@
             "mean": 46985.0
         }
     },
-    "Business and ficial project management professionals": {
+    "Business and financial project management professionals": {
         "2017": {
             "median": 45355.0,
             "mean": 50138.0
@@ -1760,7 +1760,7 @@
     "Actuaries, economists and statisticians": {
         "2017": {
             "median": 48099.0,
-            "mean": 
+            "mean": "null"
         },
         "2018": {
             "median": 45893.0,
@@ -1913,23 +1913,23 @@
     },
     "Chartered architectural technologists": {
         "2017": {
-            "median": ,
+            "median": "null",
             "mean": 35190.0
         },
         "2018": {
-            "median": ,
+            "median": "null",
             "mean": 37328.0
         },
         "2019": {
-            "median": ,
+            "median": "null",
             "mean": 41782.0
         },
         "2020": {
-            "median": ,
+            "median": "null",
             "mean": 46096.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 39698.0
         }
     },
@@ -1947,7 +1947,7 @@
             "mean": 41020.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 43289.0
         },
         "2021": {
@@ -2061,7 +2061,7 @@
             "mean": 24828.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 37242.0
         }
     },
@@ -2124,7 +2124,7 @@
         },
         "2021": {
             "median": 44988.0,
-            "mean": NaN
+            "mean": "null"
         }
     },
     "Environmental health professionals": {
@@ -2211,7 +2211,7 @@
             "mean": 43237.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 44537.0
         }
     },
@@ -2287,19 +2287,19 @@
             "mean": 30964.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 24892.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 31494.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 25276.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 28630.0
         }
     },
@@ -2383,7 +2383,7 @@
             "mean": 28309.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 31514.0
         },
         "2021": {
@@ -2493,7 +2493,7 @@
             "mean": 22000.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 27612.0
         }
     },
@@ -2543,7 +2543,7 @@
     },
     "Health associate professionals n.e.c.": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 21872.0
         },
         "2018": {
@@ -2559,7 +2559,7 @@
             "mean": 18491.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 23732.0
         }
     },
@@ -2644,7 +2644,7 @@
         },
         "2021": {
             "median": 22664.0,
-            "mean": NaN
+            "mean": "null"
         }
     },
     "Welfare and housing associate professionals n.e.c.": {
@@ -2665,7 +2665,7 @@
             "mean": 20980.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 24829.0
         }
     },
@@ -2789,21 +2789,21 @@
             "mean": 26294.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 26065.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 26131.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 34078.0
         }
     },
     "Authors, writers and translators": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 28802.0
         },
         "2018": {
@@ -2819,27 +2819,27 @@
             "mean": 29297.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 43444.0
         }
     },
     "Musicians": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 20504.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 23057.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 23279.0
         }
     },
     "Arts officers, producers and directors": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 37511.0
         },
         "2018": {
@@ -2852,7 +2852,7 @@
         },
         "2020": {
             "median": 32562.0,
-            "mean": NaN
+            "mean": "null"
         }
     },
     "Photographers, audio-visual and broadcasting equipment operators": {
@@ -2923,29 +2923,29 @@
     },
     "Sports coaches, instructors and officials": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 12384.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 12798.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 13181.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 11751.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 13955.0
         }
     },
     "Fitness instructors": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 8917.0
         },
         "2018": {
@@ -2953,15 +2953,15 @@
             "mean": 10012.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 10197.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 10520.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 12828.0
         }
     },
@@ -2993,7 +2993,7 @@
             "mean": 82070.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 85648.0
         },
         "2021": {
@@ -3003,15 +3003,15 @@
     },
     "Ship and hovercraft officers": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 39396.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 44690.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 46444.0
         },
         "2020": {
@@ -3108,7 +3108,7 @@
         },
         "2021": {
             "median": 37696.0,
-            "mean": NaN
+            "mean": "null"
         }
     },
     "Taxation experts": {
@@ -3293,7 +3293,7 @@
             "mean": 23718.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 23388.0
         },
         "2020": {
@@ -3301,7 +3301,7 @@
             "mean": 24294.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 28875.0
         }
     },
@@ -3367,7 +3367,7 @@
             "mean": 20931.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 24526.0
         }
     },
@@ -3561,7 +3561,7 @@
             "mean": 22922.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 21170.0
         }
     },
@@ -3650,7 +3650,7 @@
         },
         "2021": {
             "median": 24476.0,
-            "mean": NaN
+            "mean": "null"
         }
     },
     "Financial administrative occupations n.e.c.": {
@@ -3781,7 +3781,7 @@
             "mean": 14665.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 17940.0
         }
     },
@@ -3913,7 +3913,7 @@
             "mean": 17347.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 19141.0
         }
     },
@@ -3959,15 +3959,15 @@
     },
     "Company secretaries": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 18055.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 16836.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 16767.0
         },
         "2020": {
@@ -4039,7 +4039,7 @@
     },
     "Farmers": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 25003.0
         },
         "2018": {
@@ -4051,11 +4051,11 @@
             "mean": 25470.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 26133.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 24879.0
         }
     },
@@ -4105,7 +4105,7 @@
     },
     "Agricultural and fishing trades n.e.c.": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 21076.0
         },
         "2018": {
@@ -4373,7 +4373,7 @@
             "mean": 39409.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 38488.0
         }
     },
@@ -4413,7 +4413,7 @@
             "mean": 43624.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 46628.0
         },
         "2021": {
@@ -4479,7 +4479,7 @@
             "mean": 32184.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 27299.0
         },
         "2021": {
@@ -4589,7 +4589,7 @@
             "mean": 26087.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 27022.0
         },
         "2021": {
@@ -4615,7 +4615,7 @@
             "mean": 27041.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 24090.0
         }
     },
@@ -4699,7 +4699,7 @@
             "mean": 26724.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 27479.0
         },
         "2021": {
@@ -4857,35 +4857,35 @@
             "mean": 24122.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 23265.0
         }
     },
     "Tailors and dressmakers": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 13882.0
         }
     },
     "Textiles, garments and related trades n.e.c.": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 23588.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 23623.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 18552.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 19226.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 24967.0
         }
     },
@@ -4899,11 +4899,11 @@
             "mean": 24483.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 25199.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 26643.0
         }
     },
@@ -5005,7 +5005,7 @@
             "mean": 19366.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 15344.0
         },
         "2021": {
@@ -5097,7 +5097,7 @@
             "mean": 22846.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 22427.0
         }
     },
@@ -5125,7 +5125,7 @@
     },
     "Florists": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 11838.0
         },
         "2018": {
@@ -5133,17 +5133,17 @@
             "mean": 11757.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 14025.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 10406.0
         }
     },
     "Other skilled trades n.e.c.": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 24819.0
         },
         "2018": {
@@ -5191,7 +5191,7 @@
             "mean": 15112.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 15536.0
         },
         "2019": {
@@ -5217,7 +5217,7 @@
             "mean": 7007.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 6876.0
         }
     },
@@ -5261,7 +5261,7 @@
             "mean": 13537.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 15952.0
         }
     },
@@ -5315,7 +5315,7 @@
             "mean": 15729.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 16374.0
         },
         "2020": {
@@ -5391,7 +5391,7 @@
     },
     "Houseparents and residential wardens": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 20076.0
         },
         "2018": {
@@ -5399,7 +5399,7 @@
             "mean": 20568.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 20990.0
         },
         "2020": {
@@ -5473,7 +5473,7 @@
             "mean": 8026.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 12088.0
         }
     },
@@ -5501,7 +5501,7 @@
     },
     "Sports and leisure assistants": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 11870.0
         },
         "2018": {
@@ -5513,11 +5513,11 @@
             "mean": 12685.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 12562.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 12835.0
         }
     },
@@ -5531,7 +5531,7 @@
             "mean": 19178.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 20105.0
         },
         "2020": {
@@ -5557,7 +5557,7 @@
             "mean": 19646.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 19683.0
         },
         "2021": {
@@ -5627,7 +5627,7 @@
             "mean": 12842.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 10758.0
         }
     },
@@ -5787,7 +5787,7 @@
     },
     "Vehicle and parts salespersons and advisers": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 26707.0
         },
         "2018": {
@@ -5809,11 +5809,11 @@
     },
     "Collector salespersons and credit agents": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 16800.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 15056.0
         }
     },
@@ -5995,19 +5995,19 @@
     },
     "Market research interviewers": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 9664.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 9546.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 9738.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 8571.0
         }
     },
@@ -6131,21 +6131,21 @@
             "mean": 27053.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 28139.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 25957.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 23885.0
         }
     },
     "Plastics process operatives": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 25434.0
         },
         "2018": {
@@ -6299,7 +6299,7 @@
     },
     "Water and sewerage plant operatives": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 28970.0
         },
         "2018": {
@@ -6347,7 +6347,7 @@
             "mean": 25591.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 24714.0
         },
         "2019": {
@@ -6365,7 +6365,7 @@
     },
     "Assemblers (electrical and electronic products)": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 21729.0
         },
         "2018": {
@@ -6439,7 +6439,7 @@
             "mean": 20385.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 18548.0
         },
         "2021": {
@@ -6563,7 +6563,7 @@
             "mean": 27200.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 29752.0
         },
         "2019": {
@@ -6669,29 +6669,29 @@
     },
     "Taxi and cab drivers and chauffeurs": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 19554.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 18211.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 14476.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 13973.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 16463.0
         }
     },
     "Driving instructors": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 33902.0
         },
         "2018": {
@@ -6699,11 +6699,11 @@
             "mean": 24180.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 28985.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 29721.0
         }
     },
@@ -6757,7 +6757,7 @@
             "mean": 24169.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 23592.0
         },
         "2019": {
@@ -6835,7 +6835,7 @@
             "mean": 27346.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 24996.0
         }
     },
@@ -6845,7 +6845,7 @@
             "mean": 37914.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 31742.0
         },
         "2019": {
@@ -6863,7 +6863,7 @@
     },
     "Other drivers and transport operatives n.e.c.": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 24429.0
         },
         "2018": {
@@ -6871,11 +6871,11 @@
             "mean": 26406.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 24146.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 26300.0
         },
         "2021": {
@@ -6911,7 +6911,7 @@
             "mean": 21273.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 21570.0
         },
         "2019": {
@@ -6919,7 +6919,7 @@
             "mean": 24049.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 23425.0
         },
         "2021": {
@@ -6933,11 +6933,11 @@
             "mean": 17866.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 17228.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 17027.0
         },
         "2020": {
@@ -6973,7 +6973,7 @@
     },
     "Industrial cleaning process occupations": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 14612.0
         },
         "2018": {
@@ -7051,7 +7051,7 @@
             "mean": 25445.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 20383.0
         },
         "2021": {
@@ -7069,7 +7069,7 @@
             "mean": 14085.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 13552.0
         },
         "2021": {
@@ -7123,7 +7123,7 @@
             "mean": 12584.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 12938.0
         },
         "2019": {
@@ -7185,11 +7185,11 @@
     },
     "Elementary cleaning occupations n.e.c.": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 17302.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 20292.0
         },
         "2019": {
@@ -7267,13 +7267,13 @@
             "mean": 3894.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 3667.0
         }
     },
     "Elementary security occupations n.e.c.": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 15953.0
         },
         "2018": {
@@ -7281,15 +7281,15 @@
             "mean": 16578.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 14991.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 19848.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 16750.0
         }
     },
@@ -7333,7 +7333,7 @@
             "mean": 13384.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 14029.0
         }
     },
@@ -7449,7 +7449,7 @@
     },
     "Other elementary services occupations n.e.c.": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 8618.0
         },
         "2018": {
@@ -7465,18 +7465,18 @@
             "mean": 14021.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 16025.0
         }
     },
     "Shopkeepers and proprietors – wholesale and retail": {
         "2018": {
             "median": 24323.0,
-            "mean": NaN
+            "mean": "null"
         },
         "2019": {
             "median": 25203.0,
-            "mean": NaN
+            "mean": "null"
         }
     },
     "Social and humanities scientists": {
@@ -7499,7 +7499,7 @@
     },
     "Horticultural trades": {
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 17148.0
         },
         "2019": {
@@ -7521,25 +7521,25 @@
             "mean": 24031.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 24499.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 26150.0
         }
     },
     "Leisure and travel service occupations n.e.c.": {
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 8660.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 10173.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 11227.0
         }
     },
@@ -7589,7 +7589,7 @@
             "mean": 31109.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 27348.0
         },
         "2021": {
@@ -7603,11 +7603,11 @@
             "mean": 18456.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 17157.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 16396.0
         },
         "2021": {
@@ -7617,25 +7617,25 @@
     },
     "Leisure and theme park attendants": {
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 6063.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 7410.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 6316.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 7728.0
         }
     },
     "Smiths and forge workers": {
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 18706.0
         }
     },
@@ -7645,7 +7645,7 @@
             "mean": 24824.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 30728.0
         },
         "2021": {
@@ -7655,7 +7655,7 @@
     },
     "Brokers": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 85758.0
         }
     }

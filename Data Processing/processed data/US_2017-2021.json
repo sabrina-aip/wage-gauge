@@ -6619,45 +6619,45 @@
     },
     "Oral and Maxillofacial Surgeons": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 242740.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 242370.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 237570.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 234990.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 311460.0
         }
     },
     "Orthodontists": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 229380.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 225760.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 230830.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 237990.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 267280.0
         }
     },
@@ -6671,11 +6671,11 @@
             "mean": 191400.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 220840.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 214870.0
         },
         "2021": {
@@ -6773,23 +6773,23 @@
     },
     "Anesthesiologists": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 265990.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 267020.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 261730.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 271440.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 331190.0
         }
     },
@@ -6815,23 +6815,23 @@
     },
     "Obstetricians and Gynecologists": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 235240.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 238320.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 233610.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 239120.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 296210.0
         }
     },
@@ -6859,39 +6859,39 @@
     },
     "Psychiatrists": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 216090.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 220380.0
         },
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 220430.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 217100.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 249760.0
         }
     },
     "Surgeons": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 251890.0
         },
         "2018": {
-            "median": NaN,
+            "median": "null",
             "mean": 255110.0
         }
     },
     "Physicians and Surgeons All Other": {
         "2017": {
-            "median": NaN,
+            "median": "null",
             "mean": 211390.0
         },
         "2018": {
@@ -19443,7 +19443,7 @@
             "mean": 214370.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 235930.0
         }
     },
@@ -19453,11 +19453,11 @@
             "mean": 201440.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 210960.0
         },
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 242190.0
         }
     },
@@ -19467,17 +19467,17 @@
             "mean": 203450.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 218850.0
         }
     },
     "Surgeons Except Ophthalmologists": {
         "2019": {
-            "median": NaN,
+            "median": "null",
             "mean": 252040.0
         },
         "2020": {
-            "median": NaN,
+            "median": "null",
             "mean": 251650.0
         }
     },
@@ -20303,67 +20303,67 @@
     },
     "Cardiologists": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 353970.0
         }
     },
     "Dermatologists": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 302740.0
         }
     },
     "Emergency Medicine Physicians": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 310640.0
         }
     },
     "Neurologists": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 267660.0
         }
     },
     "Physicians Pathologists": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 267180.0
         }
     },
     "Radiologists": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 301720.0
         }
     },
     "Physicians All Other": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 231500.0
         }
     },
     "Ophthalmologists Except Pediatric": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 270090.0
         }
     },
     "Orthopedic Surgeons Except Pediatric": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 306220.0
         }
     },
     "Pediatric Surgeons": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 290310.0
         }
     },
     "Surgeons All Other": {
         "2021": {
-            "median": NaN,
+            "median": "null",
             "mean": 297800.0
         }
     },

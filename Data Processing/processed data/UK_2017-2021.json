@@ -86,7 +86,7 @@
         },
         "2020": {
             "median": 45530.0,
-            "mean": NaN
+            "mean": 
         },
         "2021": {
             "median": 45162.0,
@@ -174,7 +174,7 @@
         },
         "2020": {
             "median": 59687.0,
-            "mean": NaN
+            "mean": 
         }
     },
     "Human resource managers and directors": {
@@ -217,7 +217,7 @@
             "mean": 79009.0
         },
         "2021": {
-            "median": NaN,
+            "median": ,
             "mean": 63735.0
         }
     },
@@ -243,7 +243,7 @@
             "mean": 62670.0
         }
     },
-    "Financial institution managers and directors": {
+    "Ficial institution managers and directors": {
         "2017": {
             "median": 50779.0,
             "mean": 76413.0
@@ -261,7 +261,7 @@
             "mean": 78181.0
         },
         "2021": {
-            "median": NaN,
+            "median": ,
             "mean": 74997.0
         }
     },
@@ -333,7 +333,7 @@
     },
     "Senior officers in fire, ambulance, prison and related services": {
         "2017": {
-            "median": NaN,
+            "median": ,
             "mean": 50360.0
         },
         "2018": {
@@ -381,7 +381,7 @@
             "mean": 40185.0
         },
         "2018": {
-            "median": NaN,
+            "median": ,
             "mean": 41469.0
         },
         "2019": {
@@ -393,7 +393,7 @@
             "mean": 39156.0
         },
         "2021": {
-            "median": NaN,
+            "median": ,
             "mean": 38035.0
         }
     },
@@ -443,11 +443,11 @@
     },
     "Managers and proprietors in forestry, fishing and related services": {
         "2017": {
-            "median": NaN,
+            "median": ,
             "mean": 26258.0
         },
         "2018": {
-            "median": NaN,
+            "median": ,
             "mean": 25059.0
         },
         "2019": {
@@ -455,7 +455,7 @@
             "mean": 28545.0
         },
         "2020": {
-            "median": NaN,
+            "median": ,
             "mean": 30247.0
         },
         "2021": {
@@ -505,7 +505,7 @@
     },
     "Publicans and managers of licensed premises": {
         "2017": {
-            "median": NaN,
+            "median": ,
             "mean": 28028.0
         },
         "2018": {
@@ -513,7 +513,7 @@
             "mean": 25531.0
         },
         "2019": {
-            "median": NaN,
+            "median": ,
             "mean": 27528.0
         },
         "2020": {
@@ -532,7 +532,7 @@
         },
         "2018": {
             "median": 28638.0,
-            "mean": NaN
+            "mean": 
         },
         "2019": {
             "median": 29948.0,
@@ -549,11 +549,11 @@
     },
     "Travel agency managers and proprietors": {
         "2017": {
-            "median": NaN,
+            "median": ,
             "mean": 30804.0
         },
         "2019": {
-            "median": NaN,
+            "median": ,
             "mean": 33690.0
         }
     },
@@ -575,7 +575,7 @@
             "mean": 33468.0
         },
         "2021": {
-            "median": NaN,
+            "median": ,
             "mean": 38430.0
         }
     },
@@ -633,17 +633,17 @@
             "mean": 44226.0
         },
         "2019": {
-            "median": NaN,
+            "median": ,
             "mean": 46776.0
         },
         "2021": {
             "median": 33071.0,
-            "mean": NaN
+            "mean": 
         }
     },
     "Hairdressing and beauty salon managers and proprietors": {
         "2017": {
-            "median": NaN,
+            "median": ,
             "mean": 22627.0
         },
         "2018": {
@@ -669,11 +669,11 @@
             "mean": 42863.0
         },
         "2018": {
-            "median": NaN,
+            "median": ,
             "mean": 47124.0
         },
         "2019": {
-            "median": NaN,
+            "median": ,
             "mean": 49974.0
         },
         "2020": {
@@ -682,7 +682,7 @@
         },
         "2021": {
             "median": 45597.0,
-            "mean": NaN
+            "mean": 
         }
     },
     "Managers and proprietors in other services n.e.c.": {
@@ -1215,33 +1215,33 @@
             "mean": 31730.0
         },
         "2018": {
-            "median": NaN,
+            "median": ,
             "mean": 29036.0
         },
         "2019": {
-            "median": NaN,
+            "median": ,
             "mean": 34848.0
         },
         "2020": {
-            "median": NaN,
+            "median": ,
             "mean": 32593.0
         },
         "2021": {
-            "median": NaN,
+            "median": ,
             "mean": 33382.0
         }
     },
     "Dental practitioners": {
         "2017": {
-            "median": NaN,
+            "median": ,
             "mean": 46734.0
         },
         "2019": {
-            "median": NaN,
+            "median": ,
             "mean": 57132.0
         },
         "2020": {
-            "median": NaN,
+            "median": ,
             "mean": 47503.0
         }
     },
@@ -1303,7 +1303,7 @@
             "mean": 29696.0
         },
         "2020": {
-            "median": NaN,
+            "median": ,
             "mean": 27314.0
         }
     },
@@ -1559,7 +1559,7 @@
             "mean": 28644.0
         },
         "2021": {
-            "median": NaN,
+            "median": ,
             "mean": 28446.0
         }
     },
@@ -1603,7 +1603,7 @@
             "mean": 36594.0
         },
         "2021": {
-            "median": NaN,
+            "median": ,
             "mean": 39248.0
         }
     },
@@ -1625,21 +1625,21 @@
             "mean": 20504.0
         },
         "2021": {
-            "median": NaN,
+            "median": ,
             "mean": 24234.0
         }
     },
     "Barristers and judges": {
         "2017": {
             "median": 28567.0,
-            "mean": NaN
+            "mean": 
         },
         "2018": {
             "median": 34777.0,
             "mean": 38817.0
         },
         "2020": {
-            "median": NaN,
+            "median": ,
             "mean": 39706.0
         },
         "2021": {
@@ -1735,7 +1735,7 @@
             "mean": 46985.0
         }
     },
-    "Business and financial project management professionals": {
+    "Business and ficial project management professionals": {
         "2017": {
             "median": 45355.0,
             "mean": 50138.0
@@ -1760,7 +1760,7 @@
     "Actuaries, economists and statisticians": {
         "2017": {
             "median": 48099.0,
-            "mean": NaN
+            "mean": 
         },
         "2018": {
             "median": 45893.0,
@@ -1913,19 +1913,19 @@
     },
     "Chartered architectural technologists": {
         "2017": {
-            "median": NaN,
+            "median": ,
             "mean": 35190.0
         },
         "2018": {
-            "median": NaN,
+            "median": ,
             "mean": 37328.0
         },
         "2019": {
-            "median": NaN,
+            "median": ,
             "mean": 41782.0
         },
         "2020": {
-            "median": NaN,
+            "median": ,
             "mean": 46096.0
         },
         "2021": {

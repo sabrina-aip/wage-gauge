@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Koulen&display=swap"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-    <title>Play | Wage Gauge</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Select Country | Wage Gauge</title>
 </head>
 <body>
-    <div id="country-selector">
+    <div id="all-black-section">
         <div class="vcenter">
             <div class="center container ">
                 <h3>select country</h3>
@@ -19,15 +20,15 @@
                 <p id="offwhite">country selection impacts the dataset used in the quiz</p>    
                 <br><br>
                 <span class="flex-triplet">
-                    <a class='flex-triplet-child' href="">
-                        <img src="img/CAN flag rectangle.svg" alt="Canadian flag" class="grayscale">
-                    </a>
-                    <a class='flex-triplet-child' href="">
-                        <img src="img/US flag rectangle.svg" alt="USA flag" class="grayscale">
-                    </a>
-                    <a class='flex-triplet-child' href="">
-                        <img src="img/UK flag rectangle.svg" alt="UK flag" class="grayscale">
-                    </a>
+                    <div class='flex-triplet-child' id="can-select">
+                        <img src="img/CAN flag rectangle.svg" alt="Canadian flag" class="grayscale" >
+                    </div>
+                    <div class='flex-triplet-child' id="usa-select">
+                        <img src="img/US flag rectangle.svg" alt="USA flag" class="grayscale" >
+                    </div>
+                    <div class='flex-triplet-child' id="uk-select">
+                        <img src="img/UK flag rectangle.svg" alt="UK flag" class="grayscale" >
+                    </div>
                 </span>
                 <br><br><br>
                 <a href="index.html" id="offwhite" class="underline-animation"><-  go back</a>
@@ -37,6 +38,6 @@
 
 
     </div>
-    
+    <script src="country-select-script.js"></script>
 </body>
 </html>

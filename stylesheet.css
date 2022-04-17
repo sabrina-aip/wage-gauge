@@ -39,7 +39,11 @@ html {
   padding: 2% 0 2% 0;
 }
 
-#country-selector{
+#header {
+  padding: 3% 0 0 0;
+}
+
+#all-black-section{
   text-align: center;
   background-color: #06070B;
   min-width: 100%;
@@ -237,7 +241,6 @@ iframe.ytframe {
   text-align: left;
   color: #E9EAE8;
   display: inline-block;
-  position: relative;
 }
 
 .underline-animation {
@@ -264,8 +267,6 @@ iframe.ytframe {
   transform-origin: bottom left;
 }
 
-
-
 a.fab:focus, a.fab:active, a.fab:visited, a.fab:link { 
   text-decoration: none;
   color: #E9EAE8;
@@ -277,7 +278,8 @@ a.footer-link:focus, a.footer-link:active, a.footer-link:visited, a.footer-link:
 }
 
 .flex-split {
-  display: flex;
+  display: inline-flex;
+  border: red 0px solid;
   justify-content: space-between;
 }
 

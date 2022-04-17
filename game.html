@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&display=swap"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Koulen&display=swap"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <title>Quiz | Wage Gauge</title>
+</head>
+<body>
+  <div id="all-black-section">
+
+    <!--header-->      
+    <div id="header" class="flex-split container">
+      <div>
+        <p id="offwhite" class="test"></p>
+        <p id="offwhite">time</p>
+        <p id="offwhite" class = "counter"><span class="hour"></span>:<span class="minute"></span>:<span class="second"></span></p>
+      </div>
+      <div>
+        <p id="offwhite">score</p>
+        <p id="offwhite" class ="score"></p>
+      </div>
+    </div>
+
+    <!--game content-->
+    <div class="vcenter">
+      <div class="center container">       
+        <p class="question-number"></p>
+        <h3 class="question"></h3>
+        <span id="offwhite" class="question-element"></span>
+        <a href="submit-answer" class="btn" id="green">submit answer -></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

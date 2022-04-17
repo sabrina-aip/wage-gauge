@@ -1,4 +1,26 @@
 {
+    "Total employees all occupations": {
+        "2017": {
+            "median": 43680.0,
+            "mean": 49552.88
+        },
+        "2018": {
+            "median": 44990.4,
+            "mean": 50976.12
+        },
+        "2019": {
+            "median": 46800.0,
+            "mean": 52638.56
+        },
+        "2020": {
+            "median": 50003.2,
+            "mean": 56211.48
+        },
+        "2021": {
+            "median": 50965.2,
+            "mean": 57146.44
+        }
+    },
     "Senior management occupations": {
         "2017": {
             "median": 98124.0,

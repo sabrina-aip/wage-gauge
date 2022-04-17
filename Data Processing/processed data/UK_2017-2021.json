@@ -1,4 +1,22 @@
 {
+    "All employees": {
+        "2017": {
+            "median": 23484.0,
+            "mean": 29002.0
+        },
+        "2018": {
+            "median": 24003.0,
+            "mean": 29817.0
+        },
+        "2019": {
+            "median": 24937.0,
+            "mean": 30673.0
+        },
+        "2020": {
+            "median": 25886.0,
+            "mean": 31646.0
+        }
+    },
     "Chief executives and senior officials": {
         "2017": {
             "median": 86264.0,

@@ -15,6 +15,13 @@ html {
   display: inline-block; /* impacts the alignment within the parent*/
 }
 
+.question-container {
+  width: 50%;
+  border: white 0px solid;
+  padding: 10px;
+  display: inline-block; /* impacts the alignment within the parent*/
+}
+
 #section-1 {
   text-align: center;
   background-color: #06070B;
@@ -137,6 +144,7 @@ a {
   margin-top: 20px;
   text-decoration: none;
   display: inline-block;
+  transition: 75ms ease-in-out;
 }
 
 .big-arrow {
@@ -163,6 +171,10 @@ a {
   background-color: #92DC58;
   border: #92DC58 1px solid;
   outline-offset: -1px;
+}
+
+#green-text {
+  color:#92DC58
 }
 
 #green:hover {

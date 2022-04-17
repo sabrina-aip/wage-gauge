@@ -9,29 +9,24 @@ const uk_sel = document.querySelector('#uk-select');
 
 ///////////////////////////////////////
 
-function goToGame(dataPath){
+function goToGame(dataPath, countryName){
   sessionStorage.setItem('dataPath', dataPath);
+  sessionStorage.setItem('countryName', countryName);
   window.location.replace("game.html");
 }
 
 function chooseCAN(){
-  var dataPath = 'Data Processing/processed data/CAN_2017-2021.json'
-  console.log(dataPath)
-  goToGame(dataPath)
+  goToGame('Data Processing/processed data/CAN_2017-2021.json', 'Canada')
   can_sel.removeEventListener("click", chooseCAN) 
 }
 
 function chooseUSA(){
-  var dataPath = 'Data Processing/processed data/US_2017-2021.json'
-  console.log(dataPath)
-  goToGame(dataPath)
+  goToGame('Data Processing/processed data/US_2017-2021.json', 'the United States')
   usa_sel.removeEventListener("click", chooseUSA)
 }
 
 function chooseUK(){
-  var dataPath = 'Data Processing/processed data/UK_2017-2021.json'
-  console.log(dataPath)
-  goToGame(dataPath)
+  goToGame('Data Processing/processed data/UK_2017-2021.json', 'the United Kingdom')
   uk_sel.removeEventListener("click", chooseUK)
 }
 

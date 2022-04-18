@@ -1,5 +1,8 @@
+console.log(CAN_DATA)
+console.log(UK_DATA)
+console.log(US_DATA)
+
 // carry over data from country-select
-const dataPath = sessionStorage.getItem('dataPath')
 const countryName = sessionStorage.getItem('countryName')
 
 // setting the start and end year of the data just for robustness
@@ -16,12 +19,9 @@ const sec = document.querySelector('.second')
 
 const q_num_sel = document.querySelector('.question-number')
 const q_sel = document.querySelector('.question')
+const q_des_sel = document.querySelector('.question-description')
 const q_el_sel = document.querySelector('.question-element')
 const nav_btn = document.querySelector('.navigator')
-
-const opt1_sel = document.querySelector('#option-1')
-const opt2_sel = document.querySelector('#option-2')
-const opt3_sel = document.querySelector('#option-3')
 
 // variables for timer
 let second = 00;
@@ -86,13 +86,17 @@ var q3_jobs = {};
 var q4_jobs = {};
 var q5_jobs = {};
 
-var jsonCall = $.getJSON('Data Processing/processed data/CAN_2017-2021.json'/*dataPath*/,function(){
+var jsonCall = $.getJSON('Data Processing/processed data/CAN_2017-2021.json',function(){
   var jobData = JSON.parse(jsonCall.responseText);
   var keys = Object.keys(jobData)
   console.log(keys)
   nationalMedianIncome = jobData[keys[0]]['2021']['median'] // this structure assumes that the first row has the national data
-  console.log(nationalMedianIncome)
   });
+
+fetch('Data Processing/processed data/CAN_2017-2021.json')
+
+console.log(nationalMedianIncome)
+
 
 ///////////////////////////////////////
 
@@ -114,13 +118,24 @@ var questionContent = [
   ``,
   ``
 ];
-var answerContent = [
+var questionDescription = [
   generateTriplet('a','b','c'),
   ``,
   ``,
   ``,
   ``
 ];
+var answerDescription = [
+  `The median income of ${countryName} is ${nationalMedianIncome}`
+]
+var answerLst = [
+  1,
+  1,
+  1,
+  1,
+  1
+]
+var submission
 var questionNumber = 0
 
 function generateTriplet(opt1, opt2, opt3){
@@ -128,13 +143,13 @@ function generateTriplet(opt1, opt2, opt3){
   str = 
   `<div class="flex-triplet">
     <span id="flex-triplet-child">
-        <div class="quiz btn" id='option-1'>${opt1}</div>
+        <button class="quiz btn active" id='option-1'>${opt1}</button>
     </span>
     <span id="flex-triplet-child">
-        <div href="" class="quiz btn" id='option-2'>${opt2}</div>
+        <button href="" class="quiz btn active" id='option-2'>${opt2}</button>
     </span>
     <span id="flex-triplet-child">
-        <div href="" class="quiz btn" id='option-3'>${opt3}</div>
+        <button href="" class="quiz btn active" id='option-3'>${opt3}</button>
     </span>
   </div>
   `
@@ -142,41 +157,108 @@ function generateTriplet(opt1, opt2, opt3){
 
 }
 
+var opt1_sel;
+var opt2_sel;
+var opt3_sel;
+
+const abortController = new AbortController();
+
 function askQuestion(questionNumber) {
   console.log(questionNumber)
   score_fromDoc.textContent = score;
   q_num_sel.innerHTML = `Question ${questionNumber + 1}/${NUM_QUESTIONS}`
   q_sel.innerHTML = questionText[questionNumber]
   q_el_sel.innerHTML = questionContent[questionNumber]
-
-  console.log(opt1_sel)
-
   
+  opt1_sel = document.querySelector('#option-1')
+  opt2_sel = document.querySelector('#option-2')
+  opt3_sel = document.querySelector('#option-3')
+  answer = answerLst[questionNumber]
+
+  // click effects
+  opt1_sel.addEventListener('click',()=>{
+    opt1_sel.style.backgroundColor = '#92DC58'
+    opt2_sel.style.backgroundColor = '#E9EAE8'
+    opt3_sel.style.backgroundColor = '#E9EAE8'
+    submission = 1
+  },  { signal: abortController.signal });
+
+  opt2_sel.addEventListener('click',()=>{
+    opt1_sel.style.backgroundColor = '#E9EAE8'
+    opt2_sel.style.backgroundColor = '#92DC58'
+    opt3_sel.style.backgroundColor = '#E9EAE8'
+    submission = 2
+  },  { signal: abortController.signal });
+
+  opt3_sel.addEventListener('click',()=>{
+    opt1_sel.style.backgroundColor = '#E9EAE8'
+    opt2_sel.style.backgroundColor = '#E9EAE8'
+    opt3_sel.style.backgroundColor = '#92DC58'
+    submission = 3
+  }, { signal: abortController.signal });
 
   nav_btn.textContent = 'submit answer ->'
   nav_btn.addEventListener('click',checkAnswer)
 }
 
 function checkAnswer(e){
+  // im pretty sure this is here because i made all the buttons links for some reason
   e.preventDefault();
-  console.log('RUN: check answer')
+
+  // make the buttons inactive so they dont have a hover effect
+  opt1_sel.classList.remove("active")
+  opt2_sel.classList.remove("active")
+  opt3_sel.classList.remove("active")
+
+  // abort the event listeners so you don't click and erase the correct answer
+  abortController.abort()
+
+  // kill the old nav_button listener
   nav_btn.removeEventListener('click', checkAnswer)
+
+  // have button content depend on question number
   if (questionNumber < NUM_QUESTIONS-1){
     nav_btn.textContent = `next question ->`
   } else {
     nav_btn.textContent = `finish quiz ->`
   }
-  showAnswer()
-  nav_btn.addEventListener('click',nextQuestion)
-}
 
-function showAnswer() {
+  // create a new one to go to the next question
+  nav_btn.addEventListener('click',nextQuestion)
+
+  // actually validate the answer
   if (submission == answer){
-    score ++;
-    answerContent.innerHTML = `Correct! ${answerContent[questionNumber]}`
+    score++;
+    q_des_sel.textContent = `Correct! ${answerContent}`
   } else {
-    answerContent.innerHTML = `Incorrect. ${answerContent[questionNumber]}`
+    // if the submission is wrong, we want to mark it red
+    // and show the correct answer
+    switch (submission) {
+      case 1:
+        opt1_sel.style.backgroundColor = '#F24949'
+        break;
+      case 2:
+        opt2_sel.style.backgroundColor = '#F24949'
+        break;
+      case 3:
+        opt3_sel.style.backgroundColor = '#F24949'
+        break;
+    }
+    switch (answer) {
+      case 1:
+        opt1_sel.style.backgroundColor = '#92DC58'
+        break;
+      case 2:
+        opt2_sel.style.backgroundColor = '#92DC58'
+        break;
+      case 3:
+        opt3_sel.style.backgroundColor = '#92DC58'
+        break;
   }
+  score_fromDoc.textContent = score;
+  }
+
+
 }
 
 function nextQuestion(e) {
@@ -205,4 +287,4 @@ function endGame(){
 
 
 askQuestion(questionNumber)
-startTimer();
+startTimer()

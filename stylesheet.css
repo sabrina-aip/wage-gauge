@@ -153,13 +153,9 @@ a {
   margin: 20px 10px 20px 10px;
 }
 
-.btn.quiz:hover{
-  background-color: #92DC58;
+.btn.quiz.active:hover {
+  background-color: #92DC58!important;
 }
-
-
-
-
 
 .big-arrow {
   display: inline-block;

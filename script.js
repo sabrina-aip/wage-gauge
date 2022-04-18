@@ -1,7 +1,3 @@
-console.log(CAN_DATA)
-console.log(UK_DATA)
-console.log(US_DATA)
-
 // carry over data from country-select
 const countryName = sessionStorage.getItem('countryName')
 
@@ -75,28 +71,42 @@ function addTime(){
 ///////////////////////////////////////*/
 
 var years = [];
+var data;
+var formatter;
 
 for (let i = START_YEAR; i <= END_YEAR; i++){
   years.push(String(i))
 };
 
-var nationalMedianIncome;
-var q2_jobs = {};
-var q3_jobs = {};
-var q4_jobs = {};
-var q5_jobs = {};
+switch (countryName){
+  case 'Canada':
+    data = CAN_DATA;
+    formatter = new Intl.NumberFormat('en-CA', {
+      style: 'currency',
+      currency: 'CAD',
+    });
+    break;
+    break;
+  case 'the United States':
+    data = US_DATA;
+    formatter = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    });
+    break;
+  case 'the United Kingdom':
+    data = UK_DATA;
+    console.log(data)
+    formatter = new Intl.NumberFormat('en-GB', {
+      style: 'currency',
+      currency: 'GBP',
+    });
+    break;
+}
 
-var jsonCall = $.getJSON('Data Processing/processed data/CAN_2017-2021.json',function(){
-  var jobData = JSON.parse(jsonCall.responseText);
-  var keys = Object.keys(jobData)
-  console.log(keys)
-  nationalMedianIncome = jobData[keys[0]]['2021']['median'] // this structure assumes that the first row has the national data
-  });
 
-fetch('Data Processing/processed data/CAN_2017-2021.json')
-
-console.log(nationalMedianIncome)
-
+var keys = Object.keys(data)
+var medianIncome = formatter.format(data[keys[0]]['2021']['median'])
 
 ///////////////////////////////////////
 
@@ -119,14 +129,14 @@ var questionContent = [
   ``
 ];
 var questionDescription = [
-  generateTriplet('a','b','c'),
+  `The median salary should mean that 50% of citizens are making above that number, and 50% of citizens are making below that number`,
   ``,
   ``,
   ``,
   ``
 ];
 var answerDescription = [
-  `The median income of ${countryName} is ${nationalMedianIncome}`
+  `The median income of ${countryName} is ${medianIncome}`
 ]
 var answerLst = [
   1,
@@ -167,6 +177,7 @@ function askQuestion(questionNumber) {
   console.log(questionNumber)
   score_fromDoc.textContent = score;
   q_num_sel.innerHTML = `Question ${questionNumber + 1}/${NUM_QUESTIONS}`
+  q_des_sel.innerHTML = `${questionDescription[questionNumber]}`
   q_sel.innerHTML = questionText[questionNumber]
   q_el_sel.innerHTML = questionContent[questionNumber]
   
@@ -229,10 +240,11 @@ function checkAnswer(e){
   // actually validate the answer
   if (submission == answer){
     score++;
-    q_des_sel.textContent = `Correct! ${answerContent}`
+    q_des_sel.textContent = `Correct! ${answerDescription[questionNumber]}`
   } else {
     // if the submission is wrong, we want to mark it red
     // and show the correct answer
+    q_des_sel.textContent = `Incorrect! ${answerDescription[questionNumber]}`
     switch (submission) {
       case 1:
         opt1_sel.style.backgroundColor = '#F24949'

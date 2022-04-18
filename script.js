@@ -86,7 +86,6 @@ switch (countryName){
       currency: 'CAD',
     });
     break;
-    break;
   case 'the United States':
     data = US_DATA;
     formatter = new Intl.NumberFormat('en-US', {
@@ -96,7 +95,6 @@ switch (countryName){
     break;
   case 'the United Kingdom':
     data = UK_DATA;
-    console.log(data)
     formatter = new Intl.NumberFormat('en-GB', {
       style: 'currency',
       currency: 'GBP',
@@ -122,7 +120,7 @@ var questionText = [
   `Which job saw the <span id='green-text'>biggest raise</span> from <span id='green-text'>2020</span> to <span id='green-text'>2021</span>?`
 ];
 var questionContent = [
-  ``,
+  generateContent(['a','b','c','d']),
   ``,
   ``,
   ``,
@@ -139,7 +137,7 @@ var answerDescription = [
   `The median income of ${countryName} is ${medianIncome}`
 ]
 var answerLst = [
-  1,
+  'b',
   1,
   1,
   1,
@@ -170,34 +168,23 @@ function generateContent(lstOfOptions){
   I need a way to randomize the order in which options appear so the quiz answers aren't randomly correct every time
   */
 
-  let str;
-  console.log(`list length: ${lstOfOptions.length}`)
-  for (let i = 0; i <= lstOfOptions.length; i+){
-    console.log(lstOfOptions.sort(function() { return 0.5 - Math.random();}).pop());
+  let str = `<div class='flex-triplet'>`;
+  // need to declare this here since the length will change once we start poppin 
+  let len = lstOfOptions.length; 
+  
+  for (let i = 0; i < len; i++){
+    let option = generateOption(lstOfOptions.sort(function() { return 0.5 - Math.random();}).pop());
+    str +=
+    `${option}` + `\n`
   }
   
-  
-  // create an options string
-  // create a lstOfIndices in lstOfOptions
-  // randomly select index and append it to the options string (with a linebreak inbetween)
-  // pop the index from the list
-  // repeat until lstOfIndices is empty
-
-  str = 
-  `<div class="flex-triplet">
-    stuff here
-  </div>
-  `
+  str += `</div>`
+  console.log(str)
   return str
-
 }
 
-lstOfOptions = [1,2,3,4,5,6,7,8,9]
-generateContent(lstOfOptions)
-
-var opt1_sel;
-var opt2_sel;
-var opt3_sel;
+var opts_sel;
+var answer_sel;
 
 const abortController = new AbortController();
 
@@ -209,32 +196,18 @@ function askQuestion(questionNumber) {
   q_sel.innerHTML = questionText[questionNumber]
   q_el_sel.innerHTML = questionContent[questionNumber]
   
-  opt1_sel = document.querySelector('#option-1')
-  opt2_sel = document.querySelector('#option-2')
-  opt3_sel = document.querySelector('#option-3')
-  answer = answerLst[questionNumber]
+  opts_sel = document.querySelectorAll('#option')
 
-  // click effects
-  opt1_sel.addEventListener('click',()=>{
-    opt1_sel.style.backgroundColor = '#92DC58'
-    opt2_sel.style.backgroundColor = '#E9EAE8'
-    opt3_sel.style.backgroundColor = '#E9EAE8'
-    submission = 1
-  },  { signal: abortController.signal });
+  // create an event listener for each button
+  // update the submission value whenever they click
 
-  opt2_sel.addEventListener('click',()=>{
-    opt1_sel.style.backgroundColor = '#E9EAE8'
-    opt2_sel.style.backgroundColor = '#92DC58'
-    opt3_sel.style.backgroundColor = '#E9EAE8'
-    submission = 2
-  },  { signal: abortController.signal });
-
-  opt3_sel.addEventListener('click',()=>{
-    opt1_sel.style.backgroundColor = '#E9EAE8'
-    opt2_sel.style.backgroundColor = '#E9EAE8'
-    opt3_sel.style.backgroundColor = '#92DC58'
-    submission = 3
-  }, { signal: abortController.signal });
+  opts_sel.forEach((i)=>{
+    i.addEventListener('click',()=>{
+      opts_sel.forEach((e)=>e.style.backgroundColor = '#E9EAE8')
+      i.style.backgroundColor = '#92DC58'
+      submission = [i, i.textContent]
+    }, {signal: abortController.signal})
+  })
 
   nav_btn.textContent = 'submit answer ->'
   nav_btn.addEventListener('click',checkAnswer)
@@ -245,9 +218,7 @@ function checkAnswer(e){
   e.preventDefault();
 
   // make the buttons inactive so they dont have a hover effect
-  opt1_sel.classList.remove("active")
-  opt2_sel.classList.remove("active")
-  opt3_sel.classList.remove("active")
+  opts_sel.forEach((e)=>e.classList.remove("active"));
 
   // abort the event listeners so you don't click and erase the correct answer
   abortController.abort()
@@ -265,40 +236,25 @@ function checkAnswer(e){
   // create a new one to go to the next question
   nav_btn.addEventListener('click',nextQuestion)
 
+  // select the answer
+  opts_sel.forEach((e)=>{
+    if (e.textContent == answerLst[questionNumber]){
+      answer_sel = e      
+    }
+  })
+
   // actually validate the answer
-  if (submission == answer){
+  if (submission[1] == answerLst[questionNumber]){
     score++;
     q_des_sel.textContent = `Correct! ${answerDescription[questionNumber]}`
   } else {
     // if the submission is wrong, we want to mark it red
     // and show the correct answer
     q_des_sel.textContent = `Incorrect! ${answerDescription[questionNumber]}`
-    switch (submission) {
-      case 1:
-        opt1_sel.style.backgroundColor = '#F24949'
-        break;
-      case 2:
-        opt2_sel.style.backgroundColor = '#F24949'
-        break;
-      case 3:
-        opt3_sel.style.backgroundColor = '#F24949'
-        break;
-    }
-    switch (answer) {
-      case 1:
-        opt1_sel.style.backgroundColor = '#92DC58'
-        break;
-      case 2:
-        opt2_sel.style.backgroundColor = '#92DC58'
-        break;
-      case 3:
-        opt3_sel.style.backgroundColor = '#92DC58'
-        break;
+    submission[0].style.backgroundColor = '#F24949'
+    answer_sel.style.backgroundColor = '#92DC58'
   }
   score_fromDoc.textContent = score;
-  }
-
-
 }
 
 function nextQuestion(e) {
@@ -327,5 +283,5 @@ function endGame(){
 
 
 
-//askQuestion(questionNumber)
+askQuestion(questionNumber)
 startTimer()

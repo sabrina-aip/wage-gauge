@@ -122,7 +122,7 @@ var questionText = [
   `Which job saw the <span id='green-text'>biggest raise</span> from <span id='green-text'>2020</span> to <span id='green-text'>2021</span>?`
 ];
 var questionContent = [
-  generateTriplet('a','b','c'),
+  ``,
   ``,
   ``,
   ``,
@@ -148,24 +148,52 @@ var answerLst = [
 var submission
 var questionNumber = 0
 
-function generateTriplet(opt1, opt2, opt3){
+function generateOption(opt){
+  /*
+  I need a way to create options and tag whether it is the correct answer
+  I guess I can just compare the text content with a switch case rather than have
+  the answer be in the HTML
+  but that's annoying lol - we'll see what I'm vibing with by the end of the day
+  */
+
   let str;
   str = 
+  `<span id="flex-triplet-child">
+      <button class="quiz btn active" id='option'>${opt}</button>
+  </span>`
+  return str
+
+}
+
+function generateContent(lstOfOptions){
+  /*
+  I need a way to randomize the order in which options appear so the quiz answers aren't randomly correct every time
+  */
+
+  let str;
+  console.log(`list length: ${lstOfOptions.length}`)
+  for (let i = 0; i <= lstOfOptions.length; i+){
+    console.log(lstOfOptions.sort(function() { return 0.5 - Math.random();}).pop());
+  }
+  
+  
+  // create an options string
+  // create a lstOfIndices in lstOfOptions
+  // randomly select index and append it to the options string (with a linebreak inbetween)
+  // pop the index from the list
+  // repeat until lstOfIndices is empty
+
+  str = 
   `<div class="flex-triplet">
-    <span id="flex-triplet-child">
-        <button class="quiz btn active" id='option-1'>${opt1}</button>
-    </span>
-    <span id="flex-triplet-child">
-        <button href="" class="quiz btn active" id='option-2'>${opt2}</button>
-    </span>
-    <span id="flex-triplet-child">
-        <button href="" class="quiz btn active" id='option-3'>${opt3}</button>
-    </span>
+    stuff here
   </div>
   `
   return str
 
 }
+
+lstOfOptions = [1,2,3,4,5,6,7,8,9]
+generateContent(lstOfOptions)
 
 var opt1_sel;
 var opt2_sel;
@@ -298,5 +326,6 @@ function endGame(){
 ///////////////////////////////////////
 
 
-askQuestion(questionNumber)
+
+//askQuestion(questionNumber)
 startTimer()

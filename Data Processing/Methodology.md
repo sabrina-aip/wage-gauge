@@ -21,10 +21,10 @@ This data was then selected to the most frequent granularity of occupation, and 
 
 **Finally, note that I didn’t check if the data was regularly updated to be in current dollars. In all likelihood, it does not and will need to be amended to account for inflation to improve the meaningfulness of raise data.**
 
-This data was then formatted into a JSON with the following formatting:
+This data was then formatted into a JS variable with the following formatting:
 
 ```
-{
+const DATA = {
         'jobA': {
             'year_1': {
                 'median': 0000000,
@@ -65,10 +65,10 @@ You can access the data sets and read about the methodology and limitations here
 
 Assumed average refers to mean and stores average data as mean to retain consistency with other data sets. 
 
-This data was then formatted into a JSON with the following formatting:
+This data was then formatted into a JS variable with the following formatting:
 
 ```
-{
+const DATA = {
         'jobA': {
             'year_1': {
                 'median': 0000000,
@@ -109,10 +109,10 @@ After importing datasets to python as pandas dataframes, I filtered jobs to the 
 
 I used `A_MEDIAN` for the annual median wage and `A_MEAN` for the annual mean wage. I used `OCC_TITLE` for the job description.
 
-I stored those selections across all the years into a JSON object with the following formatting
+This data was then formatted into a JS variable with the following formatting:
 
 ```
-{
+const DATA = {
         'jobA': {
             'year_1': {
                 'median': 0000000,

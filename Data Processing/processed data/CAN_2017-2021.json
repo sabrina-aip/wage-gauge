@@ -1,5 +1,5 @@
 {
-    "Total employees all occupations": {
+    "Total employees, all occupations": {
         "2017": {
             "median": 43680.0,
             "mean": 49552.88
@@ -87,7 +87,7 @@
             "mean": 81761.68
         }
     },
-    "Middle management occupations in trades transportation production and utilities": {
+    "Middle management occupations in trades, transportation, production and utilities": {
         "2017": {
             "median": 82742.4,
             "mean": 87765.6
@@ -153,7 +153,7 @@
             "mean": 54384.72
         }
     },
-    "Finance insurance and related business administrative occupations": {
+    "Finance, insurance and related business administrative occupations": {
         "2017": {
             "median": 44428.8,
             "mean": 45461.0
@@ -197,7 +197,7 @@
             "mean": 40881.88
         }
     },
-    "Distribution tracking and scheduling co-ordination occupations": {
+    "Distribution, tracking and scheduling co-ordination occupations": {
         "2017": {
             "median": 39998.4,
             "mean": 41926.04
@@ -373,7 +373,7 @@
             "mean": 69444.44
         }
     },
-    "Professional occupations in law and social community and government services": {
+    "Professional occupations in law and social, community and government services": {
         "2017": {
             "median": 65000.52,
             "mean": 69109.04
@@ -395,7 +395,7 @@
             "mean": 76635.0
         }
     },
-    "Paraprofessional occupations in legal social community and education services": {
+    "Paraprofessional occupations in legal, social, community and education services": {
         "2017": {
             "median": 35006.4,
             "mean": 37162.32
@@ -439,7 +439,7 @@
             "mean": 93802.8
         }
     },
-    "Care providers and educational legal and public protection support occupations": {
+    "Care providers and educational, legal and public protection support occupations": {
         "2017": {
             "median": 31486.0,
             "mean": 34808.28
@@ -483,7 +483,7 @@
             "mean": 59008.56
         }
     },
-    "Technical occupations in art culture recreation and sport": {
+    "Technical occupations in art, culture, recreation and sport": {
         "2017": {
             "median": 30940.0,
             "mean": 33979.4
@@ -615,7 +615,7 @@
             "mean": 20288.32
         }
     },
-    "Service support and other service occupations n.e.c.": {
+    "Service support and other service occupations, n.e.c.": {
         "2017": {
             "median": 21840.0,
             "mean": 23091.12
@@ -637,7 +637,7 @@
             "mean": 26542.88
         }
     },
-    "Industrial electrical and construction trades": {
+    "Industrial, electrical and construction trades": {
         "2017": {
             "median": 58364.8,
             "mean": 61224.8
@@ -681,7 +681,7 @@
             "mean": 69870.32
         }
     },
-    "Other installers repairers and servicers and material handlers": {
+    "Other installers, repairers and servicers and material handlers": {
         "2017": {
             "median": 37440.0,
             "mean": 40355.12
@@ -725,7 +725,7 @@
             "mean": 53507.48
         }
     },
-    "Trades helpers construction labourers and related occupations": {
+    "Trades helpers, construction labourers and related occupations": {
         "2017": {
             "median": 41600.0,
             "mean": 44752.24
@@ -747,7 +747,7 @@
             "mean": 48881.56
         }
     },
-    "Supervisors and technical occupations in natural resources agriculture and related production": {
+    "Supervisors and technical occupations in natural resources, agriculture and related production": {
         "2017": {
             "median": 70720.0,
             "mean": 79363.96
@@ -769,7 +769,7 @@
             "mean": 86590.4
         }
     },
-    "Workers in natural resources agriculture and related production": {
+    "Workers in natural resources, agriculture and related production": {
         "2017": {
             "median": 35360.0,
             "mean": 39858.52
@@ -791,7 +791,7 @@
             "mean": 43010.76
         }
     },
-    "Harvesting landscaping and natural resources labourers": {
+    "Harvesting, landscaping and natural resources labourers": {
         "2017": {
             "median": 33280.0,
             "mean": 37636.04
@@ -813,7 +813,7 @@
             "mean": 41291.64
         }
     },
-    "Processing manufacturing and utilities supervisors and central control operators": {
+    "Processing, manufacturing and utilities supervisors and central control operators": {
         "2017": {
             "median": 60008.0,
             "mean": 65282.36
@@ -879,7 +879,7 @@
             "mean": 47022.56
         }
     },
-    "Labourers in processing manufacturing and utilities": {
+    "Labourers in processing, manufacturing and utilities": {
         "2017": {
             "median": 32240.0,
             "mean": 34947.64

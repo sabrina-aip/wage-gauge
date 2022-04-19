@@ -16,7 +16,7 @@ html {
 }
 
 .question-container {
-  width: 50%;
+  width: 70%;
   border: white 0px solid;
   padding: 10px;
   display: inline-block; /* impacts the alignment within the parent*/
@@ -150,7 +150,10 @@ a {
 }
 
 .btn.quiz {
-  margin: 20px 10px 20px 10px;
+  margin: 10px 10px 10px 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 110%;
 }
 
 .btn.quiz.active:hover {

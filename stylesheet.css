@@ -158,6 +158,34 @@ a {
 
 .btn.quiz.active:hover {
   background-color: #92DC58!important;
+}     
+
+.list-group-item {
+  cursor: pointer;
+  font-family: Inter;
+  text-align: center;
+  font-size: 100%;
+  color: #06070B;
+  background-color: #E9EAE8;
+  border: #E9EAE8 1px solid;
+  line-height: 100%;
+  padding: 12px 15px 12px 15px;
+  border: 0;
+  margin-top: 20px;
+  list-style: none; 
+}
+
+.answer-list-item {
+  cursor: pointer;
+  font-family: Inter;
+  text-align: center;
+  font-size: 100%;
+  color: #E9EAE8;
+  line-height: 100%;
+  padding: 12px 15px 12px 15px;
+  border: 0;
+  margin-top: 20px;
+  list-style: none;
 }
 
 .big-arrow {

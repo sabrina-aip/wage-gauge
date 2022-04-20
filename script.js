@@ -1,4 +1,3 @@
-import Sortable from 'sortablejs';
 // carry over data from country-select
 const countryName = sessionStorage.getItem('countryName')
 
@@ -198,16 +197,38 @@ function selectRandom_noRepeat(lst, numWanted){
   return finalLst
 }
 
+function getLstContent(dom){
+  lst = []
+  items = Array.from(dom.getElementsByTagName("li"))
+  items.forEach((item)=>{
+    lst.push(item.textContent)
+  })
+  return lst
+}
+
 let q2_a = selectRandom_noRepeat(aboveMedian,1)[0]
 let q2_w = selectRandom_noRepeat(belowMedian,2)
 
-let q3_o = selectRandom_noRepeat(Object.keys(has2021median), 3) // i need to make sure this list is ordered properly
-str = 
+let q3_o_names = selectRandom_noRepeat(Object.keys(has2021median), 3) // i need to make sure this list is ordered properly
+let q3_o= [] 
+
+// figured out a cleaner way to do this 
+// will i implement this on the other stuff
+// maYBE
+q3_o_names.forEach((e) =>{
+  q3_o.push([e,has2021median[e]])
+});
+
+q3_o.sort((a,b)=>{
+  return b[1]-a[1];
+})
+
+q3_o_str = 
 `
-<ul id="items">
-	<li>${q3_o[0]}</li>
-	<li>${q3_o[1]}</li>
-	<li>${q3_o[02]}</li>
+<ul class="list-group" id="simpleList">
+    <li class="list-group-item">${q3_o_names[0]}</li>
+    <li class="list-group-item">${q3_o_names[1]}</li>
+    <li class="list-group-item">${q3_o_names[2]}</li>
 </ul>
 `
 
@@ -274,32 +295,28 @@ var questionText = [
 var questionContent = [
   generateContent([formatter.format(medianIncome), formatter.format(medianIncome+genRandom(20000,5000)), formatter.format(medianIncome+genRandom(20000,5000))]),
   generateContent([q2_w[0], q2_w[1],q2_a]),
-  `<ul class='draggable-list' id='draggable-list'></ul>`,
+  q3_o_str,
   generateContent(q4_o),
   generateContent(q5_o)
 ];
 var questionDescription = [
   `The median means that 50% makes above the number and 50% make below it.`,
-  `Remember the median income was ${formatter.format(medianIncome)} in 2021.`,
-  ``,
+  `The median income was ${formatter.format(medianIncome)} in 2021.`,
+  `Drag the boxes in order of their earnings (highest at the top).`,
   `Which job saw the biggest decrease in wages from 2019 to 2020?`,
   `Which job saw the biggest increase in wages from 2020 to 2021?`
 ];
 var answerDescription = [
   `The median income of ${countryName} was ${formatter.format(medianIncome)} in 2021.`,
   `${q2_a}'s median wage was ${formatter.format(data[q2_a]['2021']['median'])} which is ${formatter.format(data[q2_a]['2021']['median']-medianIncome)} above the median.`,
-  ``,
-  `<span id='green-text'>${q4_a_name}</span> saw a median paycut of ${formatter.format(q4_a_abs)} (or ${Math.round(q4_a_rate*100)/100}%) from 2019 to 2020.
-  <br>
-  In comparison, the national median wage saw an <strong>increase</strong> of ${formatter.format(medianAbsChange)}`,
-  `<span id='green-text'>${q5_a_name}</span> saw a median raise of ${formatter.format(q5_a_abs)} (or ${Math.round(q5_a_rate * 100)/100}%) from 2020 to 2021.
-  <br>
-  In comparison, the national median wage saw an increase of ${formatter.format(medianAbsChange)}`
+  `The median wages for each occupation in 2021 are displayed on their right.`,
+  `${q4_a_name} saw a median paycut of ${formatter.format(q4_a_abs)} (or ${Math.round(q4_a_rate*100)/100}%) from 2019 to 2020.`,
+  `${q5_a_name} saw a median raise of ${formatter.format(q5_a_abs)} (or ${Math.round(q5_a_rate * 100)/100}%) from 2020 to 2021.`
 ]
 var answerLst = [
   formatter.format(medianIncome),
   q2_a,
-  1,
+  q3_o.map(function(value,index) { return value[0]; }),
   q4_a_name,
   q5_a_name
 ]
@@ -347,6 +364,7 @@ var answer_sel;
 const abortController = new AbortController();
 
 
+console.log(answerLst)
 
 function askQuestion(questionNumber) {
   score_fromDoc.textContent = score;
@@ -357,17 +375,23 @@ function askQuestion(questionNumber) {
   q_el_sel.innerHTML = questionContent[questionNumber]
   opts_sel = document.querySelectorAll('#option')
 
-  // create an event listener for each button
-  // update the submission value whenever they click
+  if (questionNumber==2){
+    new Sortable(simpleList, {
+      animation: 150
+    });
+  } else {
+    // create an event listener for each button
+    // update the submission value whenever they click
+    
+    opts_sel.forEach((i)=>{
+      i.addEventListener('click',()=>{
+        opts_sel.forEach((e)=>e.style.backgroundColor = '#E9EAE8')
+        i.style.backgroundColor = '#92DC58'
+        submission = [i, i.textContent]
+      }, {signal: abortController.signal})
+    })
 
-  opts_sel.forEach((i)=>{
-    i.addEventListener('click',()=>{
-      console.log(`listener event created for: ${i.textContent}`)
-      opts_sel.forEach((e)=>e.style.backgroundColor = '#E9EAE8')
-      i.style.backgroundColor = '#92DC58'
-      submission = [i, i.textContent]
-    }, {signal: abortController.signal})
-  })
+  }
 
   nav_btn.textContent = 'submit answer ->'
   nav_btn.addEventListener('click',checkAnswer)
@@ -382,6 +406,7 @@ function checkAnswer(e){
 
   // abort the event listeners so you don't click and erase the correct answer
   //abortController.abort()
+  
 
   // kill the old nav_button listener
   nav_btn.removeEventListener('click', checkAnswer)
@@ -396,23 +421,63 @@ function checkAnswer(e){
   // create a new one to go to the next question
   nav_btn.addEventListener('click',nextQuestion)
 
-  // select the answer
-  opts_sel.forEach((e)=>{
-    if (e.textContent == answerLst[questionNumber]){
-      answer_sel = e      
-    }
-  })
+  if (questionNumber==2){
+    submission = getLstContent(document.getElementById('simpleList'))
+    opts = document.querySelectorAll('.list-group-item')
+    let i = 0
+    let c = 0
+    opts.forEach ((e)=>{
+      if (submission[i] == answerLst[questionNumber][i]){
+        q_des_sel.innerHTML = `Correct!<br><br>${answerDescription[questionNumber]}`
+        e.style.backgroundColor = '#92DC58';
+        c++
+      } else {
+        q_des_sel.innerHTML = `Incorrect!<br><br>${answerDescription[questionNumber]}`
+        e.style.backgroundColor = '#F24949';
+      }
+      i++;
+    })  
 
-  // actually validate the answer
-  if (submission[1] == answerLst[questionNumber]){
-    score++;
-    q_des_sel.innerHTML = `Correct!<br><br>${answerDescription[questionNumber]}`
+    if (c==3){
+      score++ // why do this instead of checkking if the arrays are equal? because i am stupid and i could not figure it out idk how i couldn't figure it out but i sure couldn't figure it out
+    }
+
+    q_el_sel.innerHTML = 
+    `
+    <div class="flex-split"> 
+      <div>
+        ${q_el_sel.innerHTML}
+      </div>
+      <div>
+        <ul class="list-group" id="answerList">
+          <li class = 'answer-list-item'>${formatter.format(has2021median[submission[0]])}</li>
+          <li class = 'answer-list-item'>${formatter.format(has2021median[submission[1]])}</li>
+          <li class = 'answer-list-item'>${formatter.format(has2021median[submission[2]])}</li>
+        </ul> 
+      </div> 
+    </div>
+    `
+    
+
   } else {
-    // if the submission is wrong, we want to mark it red
-    // and show the correct answer
-    q_des_sel.innerHTML = `Incorrect!<br><br>${answerDescription[questionNumber]}`
-    submission[0].style.backgroundColor = '#F24949'
-    answer_sel.style.backgroundColor = '#92DC58'
+    // select the answer
+    opts_sel.forEach((e)=>{
+      if (e.textContent == answerLst[questionNumber]){
+        answer_sel = e      
+      }
+    })
+
+    // actually validate the answer
+    if (submission[1] == answerLst[questionNumber]){
+      score++;
+      q_des_sel.innerHTML = `Correct!<br><br>${answerDescription[questionNumber]}`
+    } else {
+      // if the submission is wrong, we want to mark it red
+      // and show the correct answer
+      q_des_sel.innerHTML = `Incorrect!<br><br>${answerDescription[questionNumber]}`
+      submission[0].style.backgroundColor = '#F24949'
+      answer_sel.style.backgroundColor = '#92DC58'
+    }
   }
   score_fromDoc.textContent = score;
 }
@@ -429,6 +494,10 @@ function nextQuestion(e) {
 }
 
 function endGame(){
+  sessionStorage.setItem('hour', hour);
+  sessionStorage.setItem('minute', minute);
+  sessionStorage.setItem('second', second);
+  sessionStorage.setItem('score', score);
   window.location.replace("results.html");
 }
 

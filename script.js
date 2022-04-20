@@ -1,3 +1,4 @@
+import Sortable from 'sortablejs';
 // carry over data from country-select
 const countryName = sessionStorage.getItem('countryName')
 
@@ -113,8 +114,11 @@ var medianAbsChange = data[keys[0]]['2021']['median'] - data[keys[0]]['2020']['m
 delete data[keys[0]];
 keys = keys.splice(1)
 
+// i know this is a mess
+// so am i
 var aboveMedian = []
 var belowMedian = []
+var has2021median = {}
 var raises_2021 = {}
 var paycuts_2020 = {}
 
@@ -129,6 +133,17 @@ keys.forEach((e)=>{
       } else {
         belowMedian.push(e)
       }
+    }
+  }
+});
+
+keys.forEach((e)=>{
+  // check to see if there's a 2021 value
+  if (typeof data[e]['2021'] !== 'undefined'){
+    // check to see if there's a median value in 2021
+    if (typeof data[e]['2021']['median'] !== 'undefined'){
+      // store whether the value is above or below the national median
+      has2021median[e] = data[e]['2021']['median'];
     }
   }
 });
@@ -166,11 +181,6 @@ keys.forEach((e)=>{
   }
 });
 
-console.log(aboveMedian)
-console.log(belowMedian)
-console.log(raises_2021)
-console.log(paycuts_2020)
-
 function genRandom(max, min){
   // generate a random positive or negative number with an absolute value between max and min
   return (Math.ceil(Math.random() * (max-min))+min) * (Math.round(Math.random()) ? 1 : -1)
@@ -190,6 +200,16 @@ function selectRandom_noRepeat(lst, numWanted){
 
 let q2_a = selectRandom_noRepeat(aboveMedian,1)[0]
 let q2_w = selectRandom_noRepeat(belowMedian,2)
+
+let q3_o = selectRandom_noRepeat(Object.keys(has2021median), 3) // i need to make sure this list is ordered properly
+str = 
+`
+<ul id="items">
+	<li>${q3_o[0]}</li>
+	<li>${q3_o[1]}</li>
+	<li>${q3_o[02]}</li>
+</ul>
+`
 
 // lmaooo what the fuck is this. i'm running out of time and coming up with the whackest shit lmaooooo
 if (countryName=='Canada'){
@@ -254,7 +274,7 @@ var questionText = [
 var questionContent = [
   generateContent([formatter.format(medianIncome), formatter.format(medianIncome+genRandom(20000,5000)), formatter.format(medianIncome+genRandom(20000,5000))]),
   generateContent([q2_w[0], q2_w[1],q2_a]),
-  ``,
+  `<ul class='draggable-list' id='draggable-list'></ul>`,
   generateContent(q4_o),
   generateContent(q5_o)
 ];
@@ -326,13 +346,15 @@ var opts_sel;
 var answer_sel;
 const abortController = new AbortController();
 
+
+
 function askQuestion(questionNumber) {
   score_fromDoc.textContent = score;
   q_num_sel.innerHTML = `Question ${questionNumber + 1}/${NUM_QUESTIONS}`
   q_des_sel.innerHTML = `${questionDescription[questionNumber]}`
   q_sel.innerHTML = questionText[questionNumber]
-  q_el_sel.innerHTML = questionContent[questionNumber]
   
+  q_el_sel.innerHTML = questionContent[questionNumber]
   opts_sel = document.querySelectorAll('#option')
 
   // create an event listener for each button
@@ -409,6 +431,7 @@ function nextQuestion(e) {
 function endGame(){
   window.location.replace("results.html");
 }
+
 
 
 ///////////////////////////////////////

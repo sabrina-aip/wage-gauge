@@ -330,8 +330,6 @@ a.footer-link:focus, a.footer-link:active, a.footer-link:visited, a.footer-link:
   justify-content: space-between;
 }
 
-
-
 .flex-triplet {
   display: inline-flex;
   justify-content: center;

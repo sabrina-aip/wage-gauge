@@ -376,9 +376,9 @@ function askQuestion(questionNumber) {
   opts_sel = document.querySelectorAll('#option')
 
   if (questionNumber==2){
-    new Sortable(simpleList, {
-      animation: 150
-    });
+    Sortable.create(simpleList,{
+      animation:150
+    })
   } else {
     // create an event listener for each button
     // update the submission value whenever they click

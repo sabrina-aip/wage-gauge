@@ -11,6 +11,7 @@ html {
 .container {
   width: 80%;
   border: white 0px solid;
+  margin: 20px 0 0 0;
   padding: 10px;
   display: inline-block; /* impacts the alignment within the parent*/
 }

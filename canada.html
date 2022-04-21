@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script type="text/javascript" src="assets/dataCA.js"></script>
+    <link rel="stylesheet" href="graph-stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Koulen&display=swap"/>
+
+    
+    <title>Canada Data</title>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="container">
+            <h2>Annual Wage by Occupation, Canada (2017-2021)</h2>
+            <a href="index.html" id="offwhite" class="underline-animation"><-  go back</a>
+            <div class="chart-container">
+                <canvas id="myChart" width="200" height="150"></canvas>
+            </div>
+            <p>Source: Statistics Canada. Table 14-10-0340-01. <a href='https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410034001' class = 'underline-animation' id="green-text">Employee wages by occupation, annual</a></p>        
+        </div>
+    </div>
+
+    <script src="canada-chart.js"></script>
+</body>
+</html>

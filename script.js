@@ -226,9 +226,9 @@ q3_o.sort((a,b)=>{
 q3_o_str = 
 `
 <ul class="list-group" id="simpleList">
-    <li class="list-group-item">${q3_o_names[0]}</li>
-    <li class="list-group-item">${q3_o_names[1]}</li>
-    <li class="list-group-item">${q3_o_names[2]}</li>
+    <li class="list-group-item" draggable='true'>${q3_o_names[0]}</li>
+    <li class="list-group-item" draggable='true'>${q3_o_names[1]}</li>
+    <li class="list-group-item" draggable='true'>${q3_o_names[2]}</li>
 </ul>
 `
 

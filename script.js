@@ -377,7 +377,8 @@ function askQuestion(questionNumber) {
 
   if (questionNumber==2){
     Sortable.create(simpleList,{
-      animation:150
+      animation:150,
+      swapThreshold:0.3
     })
   } else {
     // create an event listener for each button

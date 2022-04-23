@@ -56,6 +56,28 @@ p {
     text-align: center;
 }
 
+.legend-container{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: #06070B 1px solid;
+}
+
+button{
+    border: #06070B 1px solid;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 3px 0 3px 0;
+    font-family: Inter;
+}
+
+button:hover{
+    background-color: #92DC58 !important;
+    color: #06070B;
+}
+
+
 
 .underline-animation {
     display: inline-block;

@@ -18,7 +18,7 @@ var datasets = []
 
 Object.keys(data).forEach((occupation)=>{
     dataPoint = {};
-    //dataPoint['hidden'] = true;
+    dataPoint['hidden'] = true;
     dataPoint['label'] = occupation;
     dataPoint['lineTension'] = .1;
     dataPoint['fill'] = true;
@@ -35,8 +35,6 @@ Object.keys(data).forEach((occupation)=>{
     datasets.push(dataPoint)
 })
 
-console.log(datasets)
-
 var ctx = document.getElementById("myChart");
 var line = new Chart(ctx, {
     type: 'line',
@@ -46,55 +44,68 @@ var line = new Chart(ctx, {
     },
     options: {
       scales: {
-        xAxes: [{
-          time: {
-            unit: 'date'
-          },
-          gridLines: {
-            display: true
-          },
-        }],
         yAxes: [{
           ticks: {
             min: 0,
           },
-          gridLines: {
-            color: "rgba(0, 0, 0, .125)",
-          }
         }],
       },
-      legend: {
-        display: true,
-        labels: {
-            fontColor: 'white'
-        },
-        onClick: function(e, legendItem) {
-          var index = legendItem.datasetIndex;
-          var ci = this.chart;
-          var alreadyHidden = (ci.getDatasetMeta(index).hidden === null) ? false : ci.getDatasetMeta(index).hidden;
-  
-          ci.data.datasets.forEach(function(e, i) {
-            var meta = ci.getDatasetMeta(i);
-  
-            if (i !== index) {
-              if (!alreadyHidden) {
-                meta.hidden = meta.hidden === null ? !meta.hidden : null;
-              } else if (meta.hidden === null) {
-                meta.hidden = true;
-              }
-            } else if (i === index) {
-              meta.hidden = null;
-            }
-          });
+      plugins: {
+        legend: {
+          display: false
         }
       }
     }
   });
 
 const legendBox = document.querySelector('.legend-container')
+var i = 0;
+
+
+
+function hideAll(){
+  console.log(`hide all clicked`)
+  Array.from({length: i}, (x, y) => y).forEach((value)=>{
+    console.log(value)
+  })
+}
+
+function showAll(){
+  [...Array(i).keys()].forEach((value)=>{
+    line.show(value)
+  })
+}
+
+function toggleData(value){
+  console.log(value)
+  const visibilityData = line.isDatasetVisible(value);
+  if (visibilityData){
+    line.hide(value)
+  } else {
+    line.show(value)
+  }
+  console.log(visibilityData)
+}
+
+
+
+var hideAll = document.createElement('button')
+hideAll.setAttribute('onclick','hideAll()')
+hideAll.setAttribute('id','hideAll')
+hideAll.innerText = 'Hide All'
+legendBox.appendChild(hideAll)
+
+var showAll = document.createElement('button')
+showAll.setAttribute('onclick','showAll()')
+showAll.setAttribute('id','showAll')
+showAll.innerText = 'Show All'
+legendBox.appendChild(showAll)
+
 Object.keys(data).forEach((occupation)=>{
-  btn = document.createElement('button')
-  btn.innerHTML = occupation
-  console.log(btn)
+  var btn = document.createElement('button')
+  btn.setAttribute('onclick',`toggleData(${i})`)
+  btn.setAttribute('id',`${occupation}`)
+  btn.innerText = `${occupation}`
   legendBox.appendChild(btn)
+  i++;
 })

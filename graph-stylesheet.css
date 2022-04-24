@@ -9,6 +9,33 @@ scroll-behavior:smooth;
 background-color: #06070B;
 }
 
+.outer-container{
+    width: 100%;
+    height: auto;
+    border: red 2px solid;
+    text-align: center;
+}
+.title-container{
+    width: 60%;
+    text-align: center;
+    display: inline-block;
+    margin: 3% 0 0 0 ;
+}
+
+.chart-container{
+    width:50%;
+    display: inline-block;
+    border: blue 0px solid;
+}
+
+#myChart{
+    height: 20%;
+}
+
+.legend-container{
+    width:60%;
+    display: inline-block;
+}
 
 h1 {
     font-family: Koulen;
@@ -38,37 +65,14 @@ p {
     margin: 0;
 }
 
-.container {
-    width: 60%;
-    border: white 0px solid;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-}
-  
-.parent-container{
-    min-height:100%;
-    min-width:100%;
-    text-align: center;
-}
-
-.legend-container{
-    display: inline-flex;
-    flex-direction: column;
-    background-color: transparent;
-    border: #06070B 1px solid;
-}
 
 button{
     border: #06070B 1px solid;
     background-color: transparent;
     color: white;
     cursor: pointer;
-    padding: 3px 0 3px 0;
+    padding: 3px 5px 3px 5px;
+    line-height: 50%;
     font-family: Inter;
 }
 
@@ -76,8 +80,6 @@ button:hover{
     background-color: #92DC58 !important;
     color: #06070B;
 }
-
-
 
 .underline-animation {
     display: inline-block;

@@ -1,4 +1,3 @@
-console.log(CAN_DATA)
 years = ['2017', '2018', '2019', '2020', '2021']
 
 var data = {}
@@ -43,12 +42,24 @@ var line = new Chart(ctx, {
       datasets: datasets,
     },
     options: {
+      animation:{
+        duration: 100,
+      },
       scales: {
-        yAxes: [{
-          ticks: {
-            min: 0,
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Median Wage (CAD $)'
           },
-        }],
+          suggestedMax: 51000,
+        },
+        x: {
+          title: {
+            display: true,
+            text: 'Year'
+          }
+        } 
       },
       plugins: {
         legend: {
@@ -61,51 +72,43 @@ var line = new Chart(ctx, {
 const legendBox = document.querySelector('.legend-container')
 var i = 0;
 
-
-
-function hideAll(){
-  console.log(`hide all clicked`)
-  Array.from({length: i}, (x, y) => y).forEach((value)=>{
-    console.log(value)
-  })
-}
-
-function showAll(){
-  [...Array(i).keys()].forEach((value)=>{
-    line.show(value)
-  })
-}
-
-function toggleData(value){
-  console.log(value)
-  const visibilityData = line.isDatasetVisible(value);
-  if (visibilityData){
-    line.hide(value)
-  } else {
-    line.show(value)
-  }
-  console.log(visibilityData)
-}
-
-
-
-var hideAll = document.createElement('button')
-hideAll.setAttribute('onclick','hideAll()')
-hideAll.setAttribute('id','hideAll')
-hideAll.innerText = 'Hide All'
-legendBox.appendChild(hideAll)
-
-var showAll = document.createElement('button')
-showAll.setAttribute('onclick','showAll()')
-showAll.setAttribute('id','showAll')
-showAll.innerText = 'Show All'
-legendBox.appendChild(showAll)
-
 Object.keys(data).forEach((occupation)=>{
-  var btn = document.createElement('button')
+  let btn = document.createElement('button')
   btn.setAttribute('onclick',`toggleData(${i})`)
-  btn.setAttribute('id',`${occupation}`)
+  btn.setAttribute('id',`occupation-${i}`)
+  btn.setAttribute('class', 'occupationBtn')
   btn.innerText = `${occupation}`
   legendBox.appendChild(btn)
   i++;
 })
+
+function toggleData(value){
+  selectedBtn = document.getElementById(`occupation-${value}`)
+  const visibilityData = line.isDatasetVisible(value);
+  if (visibilityData){
+    line.hide(value)
+    selectedBtn.style.backgroundColor = '#06070B'
+    selectedBtn.style.color = 'white'
+  } else {
+    line.show(value)
+    selectedBtn.style.backgroundColor = '#92DC58'
+    selectedBtn.style.color = '#06070B'
+  }
+}
+
+function hideAll(){
+  for (let j=0; j<Object.keys(data).length; j++){
+    line.hide(j)
+    document.getElementById(`occupation-${j}`).style.backgroundColor = '#06070B'
+    document.getElementById(`occupation-${j}`).style.color = 'white'
+  }
+}
+
+function showAll(){
+  for (let j=0; j<Object.keys(data).length; j++){
+    line.show(j)
+    document.getElementById(`occupation-${j}`).style.backgroundColor = '#92DC58'
+    document.getElementById(`occupation-${j}`).style.color = '#06070B'
+  }
+}
+

@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
-    <script type="text/javascript" src="assets/dataCA.js"></script>
+    <script type="text/javascript" src="assets/dataUK.js"></script>
     <link rel="stylesheet" href="graph-stylesheet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Koulen&display=swap"/>
 
     
-    <title>Canada Data</title>
+    <title>United Kingdom Data</title>
 </head>
 <body>
     <div class="outer-container">
@@ -19,24 +19,27 @@
             <a href="index.html" id="offwhite" class="underline-animation"><-  go back</a>    
             <br>
             <br>
-            <h2>Annual Wage by Occupation, Canada (2017-2021)</h2>
+            <h2>Annual Wage by Occupation, United Kingdom (2017-2021)</h2>
             <br>
             <p>Get started by selecting some occupations below to reveal their data.</p>
             <br>
-            <p>Source: Statistics Canada. Table 14-10-0340-01. <a href='https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410034001' class = 'underline-animation' id="green-text">Employee wages by occupation, annual.</a></p>        
+            <p>Source: Office for National Statistics. <a href='https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/occupation4digitsoc2010ashetable14' class = 'underline-animation' id="green-text">Earnings and hours worked, occupation by four-digit SOC: ASHE Table 14 .</a></p>        
             <br><br>
         </div>
         <div class="chart-container">
             <canvas id="myChart"></canvas>
         </div>
         <div class="legend-container">
+            <!--
+            performance crashes with current implementation - maybe i'll figure it out one day
             <button onclick="showAll()">Show All</button>
             <button onclick="hideAll()">Hide All</button>
+            -->
             <br>
-            <input type="text" id="myInput" onkeyup="searchFilter()" placeholder="Filter occupation...">
+            <input type="text" id="myInput" onkeyup="searchFilter()" placeholder="Filter occupations...">
             <br>
         </div>        
     </div>
-    <script src="canada-chart.js"></script>
+    <script src="uk-chart.js"></script>
 </body>
 </html>

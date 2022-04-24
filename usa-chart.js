@@ -2,14 +2,18 @@ years = ['2017', '2018', '2019', '2020', '2021']
 
 var data = {}
 
-Object.keys(CAN_DATA).forEach((occupation)=>{
+
+Object.keys(US_DATA).forEach((occupation)=>{
     data[occupation] = []
     years.forEach((year)=>{
-        if (typeof CAN_DATA[occupation][year]['median'] !== 'undefined') {
-            data[occupation].push(CAN_DATA[occupation][year]['median'])
-        } else {
-            data[occupation].push(null)
-        }
+      if (typeof US_DATA[occupation][year] !== 'undefined') {
+        if (typeof US_DATA[occupation][year]['median'] !== 'undefined'){
+          console.log(US_DATA[occupation][year])
+          data[occupation].push(US_DATA[occupation][year]['median'])
+        }          
+      } else {
+          data[occupation].push(null)
+      }
     })
 })
 
@@ -43,16 +47,16 @@ var line = new Chart(ctx, {
     },
     options: {
       animation:{
-        duration: 100,
+        duration: 0,
       },
       scales: {
         y: {
           beginAtZero: true,
           title: {
             display: true,
-            text: 'Median Wage (Current CAD $)'
+            text: 'Median Wage (USD $) - not adjusted for inflation'
           },
-          suggestedMax: 51000,
+          suggestedMax: 45000,
         },
         x: {
           title: {
@@ -96,6 +100,7 @@ function toggleData(value){
   }
 }
 
+/*
 function hideAll(){
   for (let j=0; j<Object.keys(data).length; j++){
     line.hide(j)
@@ -111,6 +116,7 @@ function showAll(){
     document.getElementById(`occupation-${j}`).style.color = '#06070B'
   }
 }
+*/
 
 function searchFilter() {
   // Declare variables

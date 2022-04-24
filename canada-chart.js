@@ -112,3 +112,21 @@ function showAll(){
   }
 }
 
+function searchFilter() {
+  // Declare variables
+  var input, filter, textValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  btns = document.querySelectorAll('.occupationBtn')
+
+  btns.forEach((btn)=>{
+    textValue = btn.textContent || btn.innerText
+    console.log(textValue)
+    if (textValue.toUpperCase().indexOf(filter) >-1){
+      btn.style.display = "";
+    } else {
+      btn.style.display = "none";
+    }
+  })
+}
+

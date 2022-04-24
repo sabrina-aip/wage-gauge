@@ -12,7 +12,7 @@ background-color: #06070B;
 .outer-container{
     width: 100%;
     height: auto;
-    border: red 2px solid;
+    border: red 0px solid;
     text-align: center;
 }
 .title-container{
@@ -28,14 +28,13 @@ background-color: #06070B;
     border: blue 0px solid;
 }
 
-#myChart{
-    height: 20%;
-}
 
 .legend-container{
     width:60%;
     display: inline-block;
 }
+
+
 
 h1 {
     font-family: Koulen;
@@ -71,8 +70,8 @@ button{
     background-color: transparent;
     color: white;
     cursor: pointer;
-    padding: 3px 5px 3px 5px;
-    line-height: 50%;
+    padding: 5px 8px 5px 8px;
+    line-height: 100%;
     font-family: Inter;
 }
 
@@ -117,4 +116,21 @@ a {
 
 #green-text {
     color:#92DC58
+}
+
+#myInput {
+    background-image: url('./img/icons8-search.svg'); /* Add a search icon to input */
+    background-position: 6px 6px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    background-size: 26px;
+    width: 50%; /* Full-width */
+    font-size: 12px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 0px solid; /* Add a grey border */
+    margin-top: 12px; /* Add some space below the input */
+    margin-bottom: 12px; /* Add some space below the input */
   }
+
+input#myInput:focus{
+    outline: none;
+}

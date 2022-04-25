@@ -445,7 +445,7 @@ function checkAnswer(e){
 
     q_el_sel.innerHTML = 
     `
-    <div class="flex-split"> 
+    <div class="flex-split-inline"> 
       <div>
         ${q_el_sel.innerHTML}
       </div>

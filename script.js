@@ -40,10 +40,7 @@ function startTimer(){
 }
 
 function convertToString(e){
-  if (e < 10){
-    e = `0${e}`;
-  }
-  return e;
+  return e.toString().padStart(2, '0');
 }
 
 function addTime(){

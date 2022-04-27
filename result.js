@@ -1,4 +1,4 @@
-const hour = (sessionStorage.getItem('hour') || '0')
+const hour = (sessionStorage.getItem('hour') || '0').padStart(2, '0')
 const minute = (sessionStorage.getItem('minute') || '0').padStart(2, '0')
 const second = (sessionStorage.getItem('second') || '0').padStart(2, '0')
 const score = (sessionStorage.getItem('score') || '0')

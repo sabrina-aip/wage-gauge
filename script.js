@@ -125,7 +125,7 @@ keys.forEach((e)=>{
   // check to see if there's a 2021 value
   if (typeof data[e]['2021'] !== 'undefined'){
     // check to see if there's a median value in 2021
-    if (typeof data[e]['2021']['median'] !== 'undefined'){
+    if (data[e]['2021']['median'] !== 'null'){
       // store whether the value is above or below the national median
       if (data[e]['2021']['median']>medianIncome){
         aboveMedian.push(e)
@@ -140,7 +140,7 @@ keys.forEach((e)=>{
   // check to see if there's a 2021 value
   if (typeof data[e]['2021'] !== 'undefined'){
     // check to see if there's a median value in 2021
-    if (typeof data[e]['2021']['median'] !== 'undefined'){
+    if (data[e]['2021']['median'] !== 'null'){
       // store whether the value is above or below the national median
       has2021median[e] = data[e]['2021']['median'];
     }
@@ -152,9 +152,9 @@ keys.forEach((e)=>{
   // check to see if there's are 2020 and 2021 values
   if ((typeof data[e]['2020'] !== 'undefined') & typeof data[e]['2021'] !== 'undefined'){
     // check to see if there's are median values for both years
-    if ((typeof data[e]['2020']['median'] !== 'undefined') & (typeof data[e]['2021']['median'] !== 'undefined')){
+    if ((data[e]['2020']['median'] !== 'null') & (data[e]['2021']['median'] !== 'null')){
       // store whether they got a raise/paycut and by how much
-      if (data[e]['2021']['median']>data[e]['2020']['median']){ // check if raise
+      if (data[e]['2021']['median'] > data[e]['2020']['median']) { // check if raise
         raises_2021[e] = {}
         raises_2021[e]['rate'] = (data[e]['2021']['median']-data[e]['2020']['median'])/data[e]['2020']['median']*100
         raises_2021[e]['abs'] = data[e]['2021']['median']-data[e]['2020']['median']
@@ -169,7 +169,7 @@ keys.forEach((e)=>{
   // check to see if there's are 2020 and 2021 values
   if ((typeof data[e]['2019'] !== 'undefined') & typeof data[e]['2020'] !== 'undefined'){
     // check to see if there's are median values for both years
-    if ((typeof data[e]['2019']['median'] !== 'undefined') & (typeof data[e]['2020']['median'] !== 'undefined')){
+    if ((data[e]['2019']['median'] !== 'null') & (data[e]['2020']['median'] !== 'null')){
       // store whether they got a raise/paycut and by how much
       if (data[e]['2019']['median']>data[e]['2020']['median']){ // check if paycut
         paycuts_2020[e] = {}

@@ -9,16 +9,26 @@ html {
   background-color: #06070B;
 }
 
-.container {
-  width: 60%;
-  border: white 0px solid;
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+@media only screen and (min-width: 601px) { 
+  .container {
+    padding: 10px;
+    width: 60%;
+    border: white 0px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+}
+
+@media only screen and (max-width: 600px) { 
+  .container {
+    width: auto;
+    margin: auto;
+    width: 80%;
+  }
 }
 
 .parent-container{

@@ -1,4 +1,4 @@
-var US_DATA = {
+{
     "All Occupations": {
         "2017": {
             "median": 37690.0,

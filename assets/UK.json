@@ -1,4 +1,4 @@
-const UK_DATA = {
+{
     "All employees": {
         "2017": {
             "median": 23484.0,

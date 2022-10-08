@@ -1,5 +1,6 @@
+(async () => {
 // carry over data from country-select
-const countryName = sessionStorage.getItem('countryName')
+const countryName = sessionStorage.getItem('countryName')||"the United States"
 
 // setting the start and end year of the data just for robustness
 // idk if i'll ever update this tho
@@ -78,9 +79,15 @@ for (let i = START_YEAR; i <= END_YEAR; i++){
   years.push(String(i))
 };
 
+async function downloadJSONData(url) {
+  var res = await fetch(url);
+  data = await res.json();
+}
+
 switch (countryName){
   case 'Canada':
-    data = CAN_DATA;
+    //data = CAN_DATA;
+    await downloadJSONData("assets/CA.json");
     formatter = new Intl.NumberFormat('en-CA', {
       style: 'currency',
       currency: 'CAD',
@@ -88,7 +95,7 @@ switch (countryName){
     });
     break;
   case 'the United States':
-    data = US_DATA;
+    await downloadJSONData("assets/US.json");
     formatter = new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',
@@ -96,7 +103,7 @@ switch (countryName){
     });
     break;
   case 'the United Kingdom':
-    data = UK_DATA;
+    await downloadJSONData("assets/UK.json");
     formatter = new Intl.NumberFormat('en-GB', {
       style: 'currency',
       currency: 'GBP',
@@ -513,3 +520,4 @@ function endGame(){
 
 askQuestion(questionNumber)
 startTimer()
+})()

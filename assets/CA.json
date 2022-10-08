@@ -1,4 +1,4 @@
-var CAN_DATA = {
+{
     "Total employees, all occupations": {
         "2017": {
             "median": 43680.0,
